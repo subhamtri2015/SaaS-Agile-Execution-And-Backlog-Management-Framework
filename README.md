@@ -16,6 +16,8 @@
   <a href="https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1"><img src="https://img.shields.io/badge/OPEN%20THE%20APP-Release%20Health%20Assistant-167D69?style=for-the-badge" alt="Open Release Health Assistant app"/></a>
 </p>
 
+> **Problem Statement:** In a public SaaS product’s issue tracker, 77.6% of sampled open issues were still awaiting triage, which weakens backlog quality and prioritization hygiene before work reaches sprint planning. Manual reconciliation of closed issues against release notes adds execution risk at release readiness. This case study documents the requirements (PRD, user stories, acceptance criteria), Jira backlog, simulated sprint velocity and blocker tracking, and pilot and release communication for a tool that addresses both customer pain points.
+
 > **30-second summary:** I audited 200 public issues from a B2B SaaS product and found 77.6% of open issues carrying `.Needs Triage` (any age). I then specified a Release Health Assistant through a PRD, backlog, simulated sprints, and release documentation. Part A is real sample data; Part B is simulated and labeled.
 
 ## 🌟 Executive Overview
