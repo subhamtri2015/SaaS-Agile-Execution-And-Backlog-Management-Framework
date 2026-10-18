@@ -3,7 +3,7 @@
 * **Sprint Duration:** 2 Weeks (Day 1 to Day 10)
 * **Sprint Goal:** Establish the RHA ingestion pipeline and deliver automated triage SLA breach scanning to address the 77.6% untriaged backlog accumulation.
 * **Sprint Capacity:** 20 Story Points (Allocated: 19 Story Points)
-* **Sprint Status:** Completed (100% committed points delivered)
+* **Sprint Status:** Simulated outcome (14/19 points delivered; 5 points carried over)
 
 ---
 
@@ -13,7 +13,7 @@
 |---|---|---|---|---|---|
 | **RHA-101** | Scheduled Triage Scanner for issues in `.Needs Triage` > 72h | Story | P1 | 5 | **Done** |
 | **RHA-102** | Slack webhook alerting engine for team digests | Story | P2 | 3 | **Done** |
-| **RHA-103** | Priority suggestion heuristic engine for P1 crashers | Story | P2 | 5 | **Done** |
+| **RHA-103** | Priority suggestion heuristic engine for P1 crashers | Story | P2 | 5 | **Carryover to Sprint 2** |
 | **RHA-104** | Triage SLA monitoring telemetry & metrics emitter | Story | P3 | 3 | **Done** |
 | **RHA-105** | Spike: GitHub API rate limit & caching architecture | Spike | P2 | 3 | **Done** |
 

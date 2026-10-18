@@ -91,7 +91,7 @@ Scenario 1: Daily scan detects SLA breach
   And it is added to the daily team Slack digest with issue number, title, author, and age in days.
 
 Scenario 2: Issue triaged within SLA
-  Given an issue has had its '.Needs Triage' label removed or assigned a 'Priority:P[1-4]' within 48 hours
+  Given an issue has had its '.Needs Triage' label removed or assigned a priority within 72 hours
   When the RHA scan runs
   Then the issue is excluded from the breach escalation digest.
 

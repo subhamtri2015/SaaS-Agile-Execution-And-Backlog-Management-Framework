@@ -3,55 +3,63 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Data-Real%20GitHub%20API-2ea44f?style=for-the-badge&logo=github"/>
-  <img src="https://img.shields.io/badge/Product-Metabase%20BI-509EE3?style=for-the-badge&logo=metabase&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Subject-Public%20OSS%20BI%20Product-509EE3?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Delivery-Simulated%20Agile-orange?style=for-the-badge&logo=scrumalliance"/>
   <img src="https://img.shields.io/badge/Stack-Jira%20%7C%20Confluence%20%7C%20SQL%20%7C%20Python-blue?style=for-the-badge"/>
 </p>
 
 ---
 
+> Independent analysis of public GitHub data. Not affiliated with or endorsed by Metabase. Findings describe a sample, not the company's internal practice.
+
+<p align="center">
+  <a href="https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1"><img src="https://img.shields.io/badge/OPEN%20THE%20APP-Release%20Health%20Assistant-167D69?style=for-the-badge" alt="Open Release Health Assistant app"/></a>
+</p>
+
+> **30-second summary:** I audited 200 public issues from a B2B SaaS product and found 77.6% of open issues carrying `.Needs Triage` (any age). I then specified a Release Health Assistant through a PRD, backlog, simulated sprints, and release documentation. Part A is real sample data; Part B is simulated and labeled.
+
 ## 🌟 Executive Overview
 
 ![Product Operations Hero Banner](./assets/hero-banner.svg)
 
-This repository presents an end-to-end Product Operations case study and systems architecture built on real engineering telemetry from **Metabase** (`metabase/metabase`), the leading open-source Business Intelligence platform. 
+This repository presents an independent product-operations case study based on a sample of public GitHub issue, milestone, and release data from an open-source BI product. It does not describe the project's internal operating practices.
 
 It executes a two-phase operational transformation:
 1. **Part A (Empirical Audit):** Quantitative SQL analysis of 200 issues, 200 milestones, and 200 releases to diagnose backlog health, triage latency, release cadence, and customer pain themes.
-2. **Part B (Product Response):** The specification and simulated delivery of the **Release Health Assistant (RHA)**—an automated governance platform that resolves triage debt, guarantees milestone-to-changelog parity, and enforces automated Go/No-Go release gates.
+2. **Part B (Product Response):** A proposed **Release Health Assistant (RHA)**, with simulated sprint and release artifacts. No production software was deployed or tested.
 
 ---
 
-## 📊 Live Audit KPI Scorecard
+## 📊 Audit snapshot (pulled 2026-10-18, n = 200 issues)
 
 ![Audit Telemetry Dashboard](./assets/audit-dashboard.svg)
 
 ### 📌 Empirical Findings Summary
 
-> **🔍 Backlog Prioritization vs. Triage Latency:**  
-> Prioritization coverage is high at **94.7%** (144 / 152 open issues). However, **77.6%** (118 / 152) linger in `.Needs Triage`, proving that **intake triage latency**—not engineering resolution speed—is the core operational bottleneck.
-> 
-> **⏱️ Resolution Speed by Severity:**  
-> Critical P1 crash/security defects are resolved in an average of **4.1 days**, while P2 major functional defects average **9.3 days** (2.3x longer) due to cross-team dependencies across database connectors and visualization layers.
-> 
-> **🚀 Release Cadence & Milestone Delivery:**  
-> The engineering team ships General Availability (GA) releases **every 2.7 days** across active maintenance branches, maintaining **100% milestone completion** at formal release closure.
-> 
-> **💡 Customer Engagement & Friction Themes:**  
+> **🔍 Backlog Prioritization vs. Triage Latency:**
+> In this sample, **94.7%** of open issues (144 / 152) had a priority label, while **77.6%** (118 / 152) carried `.Needs Triage` at any age. The audit does not establish how long those issues had been waiting.
+>
+> **⏱️ Resolution Speed by Severity:**
+> P1 issues were resolved in an average of **4.1 days** and P2 defects averaged **9.3 days** (2.3x P1) in this sample; this data does not establish why. These resolution-time figures describe the sampled closed issues, not triage latency.
+>
+> **🚀 Release Cadence & Milestone Delivery:**
+> The sampled releases were published at an average cadence of **2.7 days** across active maintenance branches. Milestone completion at closure is not reported as an outcome because it is circular by definition.
+>
+> **💡 Customer Engagement & Friction Themes:**
 > Top community engagement centers on KPI number card title truncation ([#84334](https://github.com/metabase/metabase/issues/84334)), embedded on-demand query execution ([#83595](https://github.com/metabase/metabase/issues/83595)), and tab URL slug deep-linking ([#84169](https://github.com/metabase/metabase/issues/84169)).
 
 ---
 
 ## 🛠️ The Product Response: Release Health Assistant (RHA)
 
-To eliminate the 77.6% triage backlog debt and prevent release notes desynchronization during rapid 2.7-day deployment cycles, we engineered the **Release Health Assistant**.
+The audit motivates a proposed **Release Health Assistant**. The 72-hour triage threshold and parity workflow are product hypotheses, not existing Metabase policies or implemented features.
 
 ![Release Health Assistant UI Mockup](./assets/rha-interface-mockup.svg)
 
-### Core Capabilities
-* **Automated Triage SLA Monitor:** Daily cron scanner identifying issues tagged `.Needs Triage` older than 72 hours, automatically dispatching scoped Slack digests to sub-teams (`.Team/Graphy`, `.Team/QueryProcessor`, `.Team/UXWest`).
-* **Milestone-to-Changelog Parity Validator:** Bi-directional validator ensuring 100% of closed milestone issues appear in customer-facing release notes. Reports status directly to GitHub PR Check Runs.
-* **Go/No-Go Readiness Portal:** Automated pre-flight gate enforcing zero P1 blockers, 100% test pass rate, changelog parity, and tamper-proof digital sign-offs before production deployment.
+### Proposed Capabilities
+* **Triage target monitor:** A proposed daily scan for `.Needs Triage` issues older than 72 hours, with a scoped team digest.
+* **Milestone-to-changelog parity check:** A proposed comparison that flags missing or mismatched release notes; no parity result has been measured.
+* **Readiness portal:** A proposed checklist for P1 blockers, test evidence, parity review, and sign-offs; it has not been implemented or deployed.
 
 ---
 
@@ -59,16 +67,16 @@ To eliminate the 77.6% triage backlog debt and prevent release notes desynchroni
 
 The table below is an illustrative delivery scenario across three simulated sprints. It includes carryover and does not report actual implementation or measured team velocity.
 
-![Jira Sprint Delivery Board & Burndown](./assets/jira-board-burndown.svg)
+![Illustration: simulated sprint board and burndown](./assets/jira-board-burndown.svg)
 
 ### Velocity Breakdown Across Sprints
 
 | Sprint | Committed Points | Delivered Points | Carryover | Predictability | Focus |
 |---|---:|---:|---:|---:|---|
-| **Sprint 1** | 19 | 16 | 3 (RHA-103) | 84% | Foundations & triage governance |
-| **Sprint 2** | 24 (21 + 3 carried) | 21 | 3 | 88% | Release gate & changelog automation |
-| **Sprint 3** | 27 (24 + 3 carried) | 27 | 0 | 100% | Readiness portal, pilot & launch |
-| **Total unique scope** | **64** | **64** | **0 remaining** | **Illustrative** | **Target: <15% triage debt (assumption, not measured)** |
+| **Sprint 1** | 19 | 14 | 5 (RHA-103) | 74% | Foundations & triage governance |
+| **Sprint 2** | 26 (21 + 5 carried) | 21 | 5 | 81% | Release gate & changelog automation |
+| **Sprint 3** | 27 (22 + 5 carried) | 27 | 0 | 100% | Readiness portal, pilot & launch |
+| **Total unique backlog scope** | **62** | **62** | **0 remaining** | **Illustrative** | **Target: <15% triage debt (assumption, not measured)** |
 
 *(Explore full sprint ceremonies, standups, and retrospectives in [`05-sprints-simulated/`](./05-sprints-simulated/))*
 
@@ -106,7 +114,7 @@ Acceptance Criteria (Gherkin):
     And a formatted summary is posted to the team's Slack channel (#team-graphy).
 
   Scenario 2: Issue triaged within SLA
-    Given an issue has had its '.Needs Triage' label removed within 48 hours
+    Given an issue has had its '.Needs Triage' label removed within 72 hours
     When the RHA scan runs
     Then the issue is excluded from the breach escalation digest.
 ```
@@ -117,11 +125,11 @@ Acceptance Criteria (Gherkin):
 
 Key engineering and product-ops trade-offs documented during this project:
 
-1. **Target Product Selection:** Chose Metabase over vertical robotics because B2B BI operations universally demonstrate the standard triage → backlog → sprint → release-notes lifecycle with legal, public REST API access.
-2. **Issue Fetch Optimization:** Replaced standard `/issues` pagination (which returns 90% pull requests) with direct GitHub Search API queries (`q=repo:metabase/metabase is:issue`) to retrieve 100% pure issues.
-3. **Milestone Completion as Velocity Proxy:** Grounded in maintainer comments (issue #10139) confirming that closing an issue into a milestone is how the team determines release note inclusion.
-4. **Data Minimization:** Raw JSON responses are cached locally and `.gitignore`d; only normalized, aggregated metrics and CSVs are committed to protect author privacy.
-5. **Scope Guardrails:** Deferred autonomous bot PR generation to future roadmap, prioritizing deterministic SLA monitoring and changelog parity verification.
+1. **Target product:** Chose public Metabase GitHub data over robotics or proprietary scraping because it is accessible through a documented public API.
+2. **Extraction and proxy:** Used a hybrid extraction approach; milestone completion is explicitly treated as a proxy for sprint/release analysis, not as a formal sprint measure.
+3. **Storage:** Raw responses are gitignored; normalized aggregate datasets are committed.
+4. **Documentation lifecycle:** Kept the upstream PRD separate from downstream release documentation.
+5. **Scope:** Specified a three-sprint simulated MVP and deferred autonomous bot fixes.
 
 *(Full rationale in [`01-context/decisions-log.md`](./01-context/decisions-log.md))*
 
@@ -133,10 +141,67 @@ Key engineering and product-ops trade-offs documented during this project:
 
 ---
 
+## Design and PRD at a glance
+
+The screens below are a Figma Make prototype using sample data, not evidence of a deployed product. Sample metrics are illustrative only.
+
+### Triage Monitor
+
+![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
+
+Shows the issue intake snapshot, triage backlog and priority coverage, with an issue table for reviewing items that need attention. The 41 breaching figure is sample data, not a measured audit result.
+
+### Changelog Parity
+
+![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
+
+Compares completed milestone work with release-note entries, highlighting matched items and a missing note. The 94% parity value is sample data, not a measured result.
+
+### Release Readiness
+
+![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
+
+Summarizes release gates and required sign-offs, showing a No-Go state when checks fail or approvals are outstanding. The displayed gate states and counts are sample data.
+
+**Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
+
+**PRD at a glance:** See the six-box content and design handoff in [`09-design/README.md`](./09-design/README.md). The PNG paths above are ready; the files must be added to `09-design/` for the images to render on GitHub.
+
+---
+
+## JD skill → proof
+
+| What the role needs | Proof | Link |
+|---|---|---|
+| PRDs, user stories, acceptance criteria | PRD with goals, scope, and Gherkin acceptance criteria | [04-requirements](./04-requirements) |
+| Agile/Scrum, velocity, blockers | Three simulated sprint plans and risk log | [05-sprints-simulated](./05-sprints-simulated) |
+| Backlog quality, feedback themes | Sample-based audit and feedback analysis | [02-audit](./02-audit) |
+| Release notes, test and readiness docs | Simulated release documentation and test plan | [06-docs](./06-docs) |
+| Demos and pilots | Demo script and proposed pilot plan | [07-launch](./07-launch) |
+| PRDs, workflow documentation, Figma | PRD and design handoff; Figma exports pending | [09-design](./09-design) |
+
+---
+
+## Method & limits
+
+* **Sample and window:** Most recent 200 issues by creation date, pulled 2026-10-18 using descending creation-date sort. Counts describe this sample only; recent issues may be less likely to have been triaged.
+* **Endpoints:** GitHub Search API `search/issues` with `repo:metabase/metabase is:issue`, plus repository milestone and release endpoints. The script's `--pages` argument limits collection; this is not a 12-month census.
+* **Proxies:** GitHub milestones are used as a release/sprint proxy and are not equivalent to Jira sprints. Release cadence is descriptive; no internal workflow cause is inferred.
+* **Simulation boundary:** Part A is public API sample analysis. Part B (RHA, stories, sprint outcomes, release notes, and UI) is a portfolio specification/simulation, not deployed software.
+* **Data use:** The repository contains processed aggregate/normalized datasets; raw JSON responses are gitignored. API use is subject to [GitHub's Terms of Service](https://docs.github.com/site-policy/github-terms/github-terms-of-service). See [data sources](./01-context/data-sources.md) and [limitations](./01-context/limitations.md).
+
+---
+
+## About me
+
+**Subham Tripathy** · [Product Operations role] · [LinkedIn URL] · [CV URL] · [Email]
+
+---
+
 ## 📁 Repository Directory Structure
 
 ```
-saas-product-ops-audit/
+release-health-assistant/
 ├── README.md                      # Executive Showcase & Technical Documentation
 ├── assets/                        # SVG Visualizations & Architecture Diagrams
 │   ├── hero-banner.svg            # Executive overview header
@@ -161,7 +226,8 @@ saas-product-ops-audit/
 ├── 04-requirements/               # PRD, backlog CSV & Jira ticket standards
 ├── 05-sprints-simulated/          # 3 Sprints, ceremonies, burndown & risk log
 ├── 06-docs/                       # Release notes, feature library, test record, checklist
-└── 07-launch/                     # 5-min demo script, 4-week pilot plan & announcement
+├── 07-launch/                     # 5-min demo script, 4-week pilot plan & announcement
+└── 09-design/                     # Figma handoff, PRD at-a-glance copy, pending exports
 ```
 
 ---

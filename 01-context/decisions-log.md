@@ -11,7 +11,7 @@ This log records major product-ops and architectural decisions made throughout t
 * **Options Considered:**
   1. *Vertical Robotics internal logs:* Highly specialized, limited public data, requires NDA/synthetic masking.
   2. *Proprietary B2B CRM scraping:* High risk of ToS violations, fragile HTML selectors.
-  3. *(Chosen) Metabase Public GitHub Data:* Universally recognized open-source B2B analytics platform with rigorous issue labeling (`Priority:P1-P4`, `.Needs Triage`, `Type:Bug`), milestones mapped to release notes, and legal REST API access.
+  3. *(Chosen) Metabase Public GitHub Data:* Open-source B2B analytics platform with public issue labels including `Priority:P1-P3` and `.Needs Triage`, milestones, and a documented REST API.
 * **Trade-off:** Metabase issues mix open-source community bug reports with enterprise feature requests; pull requests are included in GitHub's `/issues` endpoint and must be filtered out systematically.
 
 ---

@@ -24,7 +24,7 @@ All raw and processed data utilized in this audit originates directly from the o
 * `closed_at`: ISO-8601 resolution timestamp (or NULL if open).
 * `comments_count`: Total comment interactions.
 * `reactions_count`: Total reaction emoji interactions (👍, ❤️, 🚀, etc.).
-* `priority`: Normalized priority string (`P1`, `P2`, `P3`, `P4`, or `Unassigned`).
+* `priority`: Normalized priority string (`P1`, `P2`, `P3`, or `Unassigned`) observed in this sample.
 * `type`: Issue classification (`Bug`, `New Feature`, `Documentation`, or `Unassigned`).
 * `needs_triage`: Binary integer flag (1 if tagged `.Needs Triage`, else 0).
 * `milestone_title`: Associated milestone name (e.g. `0.52.1`).

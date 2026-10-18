@@ -2,8 +2,8 @@
 
 * **Sprint Duration:** 2 Weeks (Day 11 to Day 20)
 * **Sprint Goal:** Build the Milestone-to-Changelog Parity Validator and automate release notes generation to eliminate undocumented customer regressions.
-* **Sprint Capacity:** 21 Story Points (Allocated: 21 Story Points)
-* **Sprint Status:** Completed (100% committed points delivered)
+* **Sprint Capacity:** 26 Story Points (21 new points + 5 carried from Sprint 1)
+* **Sprint Status:** Simulated outcome (21/26 points delivered; 5 points carried over)
 
 ---
 
@@ -16,6 +16,7 @@
 | **RHA-203** | Changelog parity diff engine & anomaly alert | Story | P1 | 3 | **Done** |
 | **RHA-204** | GitHub PR status check check-run integration | Story | P2 | 5 | **Done** |
 | **RHA-205** | Automated release draft generator from milestone tickets | Story | P3 | 3 | **Done** |
+| **RHA-103** | Priority suggestion heuristic engine for P1 crashers (carryover) | Story | P2 | 5 | **Carryover to Sprint 3** |
 
 ---
 
