@@ -30,6 +30,29 @@ It executes a two-phase operational transformation:
 
 ---
 
+## Design at a glance
+
+The screens below are a Figma Make prototype using sample data, not evidence of a deployed product. Sample metrics are illustrative only.
+
+### Triage Monitor
+
+![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
+
+
+### Changelog Parity
+
+![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
+
+
+### Release Readiness
+
+![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
+
+
+**Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
+
+---
+
 ## 📊 Audit snapshot (pulled 2026-10-18, n = 200 issues)
 
 ![Audit Telemetry Dashboard](./assets/audit-dashboard.svg)
@@ -140,30 +163,6 @@ Key engineering and product-ops trade-offs documented during this project:
 ![Product Roadmap](./assets/roadmap.svg)
 
 ---
-
-## Design and PRD at a glance
-
-The screens below are a Figma Make prototype using sample data, not evidence of a deployed product. Sample metrics are illustrative only.
-
-### Triage Monitor
-
-![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
-
-Shows the issue intake snapshot, triage backlog and priority coverage, with an issue table for reviewing items that need attention. The 41 breaching figure is sample data, not a measured audit result.
-
-### Changelog Parity
-
-![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
-
-Compares completed milestone work with release-note entries, highlighting matched items and a missing note. The 94% parity value is sample data, not a measured result.
-
-### Release Readiness
-
-![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
-
-Summarizes release gates and required sign-offs, showing a No-Go state when checks fail or approvals are outstanding. The displayed gate states and counts are sample data.
-
-**Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
 
 **PRD at a glance:** See the six-box content and design handoff in [`09-design/README.md`](./09-design/README.md). The PNG paths above are ready; the files must be added to `09-design/` for the images to render on GitHub.
 
