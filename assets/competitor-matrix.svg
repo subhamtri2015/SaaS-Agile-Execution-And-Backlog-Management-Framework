@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Competitor capability matrix</title>
+  <desc id="desc">A source-limited comparison of Jira Automation, Linear Triage, GitHub release notes, and the RHA proposed design across seven workflow capabilities. RHA is not built.</desc>
+  <rect x="0" y="0" width="1200" height="760" fill="#ffffff"/>
+  <g font-family="Inter, -apple-system, Segoe UI, Arial, sans-serif" fill="#1f2937">
+    <text x="28" y="42" font-size="24" font-weight="700">Competitor capability comparison</text>
+    <text x="28" y="68" font-size="13" fill="#4b5563">Documented means stated in the sources reviewed. Not found does not mean unavailable.</text>
+    <rect x="951" y="22" width="220" height="35" rx="7" fill="#f8fafc" stroke="#64748b" stroke-dasharray="5 4"/>
+    <text x="966" y="44" font-size="13" font-weight="700">Proposed (design only)</text>
+
+    <rect x="24" y="94" width="1152" height="52" rx="8" fill="#f1f5f9"/>
+    <text x="40" y="125" font-size="14" font-weight="700">Capability</text>
+    <text x="398" y="116" font-size="14" font-weight="700" text-anchor="middle"><tspan x="398">Jira</tspan><tspan x="398" dy="17">Automation</tspan></text>
+    <text x="592" y="116" font-size="14" font-weight="700" text-anchor="middle"><tspan x="592">Linear</tspan><tspan x="592" dy="17">Triage</tspan></text>
+    <text x="786" y="116" font-size="14" font-weight="700" text-anchor="middle"><tspan x="786">GitHub release</tspan><tspan x="786" dy="17">notes</tspan></text>
+    <rect x="882" y="94" width="294" height="52" rx="7" fill="#eff6ff" stroke="#64748b" stroke-dasharray="5 4"/>
+    <text x="1029" y="116" font-size="14" font-weight="700" text-anchor="middle"><tspan x="1029">RHA</tspan><tspan x="1029" dy="17">Proposed (design only)</tspan></text>
+
+    <g stroke="#d1d5db" stroke-width="1">
+      <path d="M24 146H1176M24 203H1176M24 260H1176M24 317H1176M24 374H1176M24 431H1176M24 488H1176M24 545H1176"/>
+      <path d="M340 94V545M495 94V545M689 94V545M883 94V545"/>
+    </g>
+    <rect x="882" y="146" width="294" height="399" fill="#eff6ff" fill-opacity="0.45" stroke="#64748b" stroke-dasharray="5 4"/>
+
+    <g font-size="13" font-weight="600">
+      <text x="40" y="171"><tspan x="40">Triage queue /</tspan><tspan x="40" dy="16">intake review</tspan></text>
+      <text x="40" y="228"><tspan x="40">Auto-routing or</tspan><tspan x="40" dy="16">assignment rules</tspan></text>
+      <text x="40" y="283"><tspan x="40">Alerts when issue waits</tspan><tspan x="40" dy="16">too long untriaged</tspan></text>
+      <text x="40" y="342"><tspan x="40">Release-event</tspan><tspan x="40" dy="16">automation</tspan></text>
+      <text x="40" y="399"><tspan x="40">Release-notes</tspan><tspan x="40" dy="16">generation</tspan></text>
+      <text x="40" y="456"><tspan x="40">Closed-issue vs</tspan><tspan x="40" dy="16">release-notes parity</tspan></text>
+      <text x="40" y="513"><tspan x="40">Go/No-Go gate</tspan><tspan x="40" dy="16">with sign-offs</tspan></text>
+    </g>
+
+    <!-- Triage queue / intake review -->
+    <circle cx="356" cy="174" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="370" y="170" font-size="12"><tspan x="370">Not</tspan><tspan x="370" dy="15">researched</tspan></text>
+    <circle cx="511" cy="174" r="7" fill="#16a34a"/><text x="525" y="178" font-size="12">Documented</text>
+    <circle cx="705" cy="174" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="719" y="170" font-size="12"><tspan x="719">Not</tspan><tspan x="719" dy="15">researched</tspan></text>
+    <circle cx="899" cy="174" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="178" font-size="12">Designed</text>
+
+    <!-- Auto-routing or assignment rules -->
+    <circle cx="356" cy="231" r="7" fill="#16a34a"/><text x="370" y="235" font-size="12">Documented</text>
+    <path d="M504 231 A7 7 0 0 1 518 231 L504 231 Z" fill="#f59e0b"/><circle cx="511" cy="231" r="7" fill="none" stroke="#d97706"/><text x="525" y="227" font-size="12"><tspan x="525">Partial /</tspan><tspan x="525" dy="15">plan-limited</tspan></text>
+    <circle cx="705" cy="231" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="719" y="227" font-size="12"><tspan x="719">Not</tspan><tspan x="719" dy="15">researched</tspan></text>
+    <circle cx="899" cy="231" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="235" font-size="12">Designed</text>
+
+    <!-- Wait-time alerts -->
+    <path d="M349 288 A7 7 0 0 1 363 288 L349 288 Z" fill="#f59e0b"/><circle cx="356" cy="288" r="7" fill="none" stroke="#d97706"/><text x="370" y="284" font-size="12"><tspan x="370">Partial /</tspan><tspan x="370" dy="15">plan-limited</tspan></text>
+    <circle cx="511" cy="288" r="7" fill="#9ca3af"/><path d="M507 288H515" stroke="#fff" stroke-width="2"/><text x="525" y="284" font-size="12"><tspan x="525">Not found in</tspan><tspan x="525" dy="15">docs read</tspan></text>
+    <circle cx="705" cy="288" r="7" fill="#9ca3af"/><path d="M701 288H709" stroke="#fff" stroke-width="2"/><text x="719" y="284" font-size="12"><tspan x="719">Not found in</tspan><tspan x="719" dy="15">docs read</tspan></text>
+    <circle cx="899" cy="288" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="292" font-size="12">Designed</text>
+
+    <!-- Release-event automation -->
+    <circle cx="356" cy="345" r="7" fill="#16a34a"/><text x="370" y="349" font-size="12">Documented</text>
+    <circle cx="511" cy="345" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="525" y="341" font-size="12"><tspan x="525">Not</tspan><tspan x="525" dy="15">researched</tspan></text>
+    <circle cx="705" cy="345" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="719" y="341" font-size="12"><tspan x="719">Not</tspan><tspan x="719" dy="15">researched</tspan></text>
+    <circle cx="899" cy="345" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="349" font-size="12">Designed</text>
+
+    <!-- Release-notes generation -->
+    <circle cx="356" cy="402" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="370" y="398" font-size="12"><tspan x="370">Not</tspan><tspan x="370" dy="15">researched</tspan></text>
+    <circle cx="511" cy="402" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="525" y="398" font-size="12"><tspan x="525">Not</tspan><tspan x="525" dy="15">researched</tspan></text>
+    <circle cx="705" cy="402" r="7" fill="#16a34a"/><text x="719" y="406" font-size="12">Documented</text>
+    <circle cx="899" cy="402" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="406" font-size="12">Designed</text>
+
+    <!-- Parity check -->
+    <circle cx="356" cy="459" r="7" fill="#9ca3af"/><path d="M352 459H360" stroke="#fff" stroke-width="2"/><text x="370" y="455" font-size="12"><tspan x="370">Not found in</tspan><tspan x="370" dy="15">docs read</tspan></text>
+    <circle cx="511" cy="459" r="7" fill="#9ca3af"/><path d="M507 459H515" stroke="#fff" stroke-width="2"/><text x="525" y="455" font-size="12"><tspan x="525">Not found in</tspan><tspan x="525" dy="15">docs read</tspan></text>
+    <circle cx="705" cy="459" r="7" fill="#9ca3af"/><path d="M701 459H709" stroke="#fff" stroke-width="2"/><text x="719" y="455" font-size="12"><tspan x="719">Not found in</tspan><tspan x="719" dy="15">docs read</tspan></text>
+    <circle cx="899" cy="459" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="463" font-size="12">Designed</text>
+
+    <!-- Gate with sign-offs -->
+    <circle cx="356" cy="516" r="7" fill="#9ca3af"/><path d="M352 516H360" stroke="#fff" stroke-width="2"/><text x="370" y="512" font-size="12"><tspan x="370">Not found in</tspan><tspan x="370" dy="15">docs read</tspan></text>
+    <circle cx="511" cy="516" r="7" fill="#9ca3af"/><path d="M507 516H515" stroke="#fff" stroke-width="2"/><text x="525" y="512" font-size="12"><tspan x="525">Not found in</tspan><tspan x="525" dy="15">docs read</tspan></text>
+    <circle cx="705" cy="516" r="7" fill="#9ca3af"/><path d="M701 516H709" stroke="#fff" stroke-width="2"/><text x="719" y="512" font-size="12"><tspan x="719">Not found in</tspan><tspan x="719" dy="15">docs read</tspan></text>
+    <circle cx="899" cy="516" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="913" y="520" font-size="12">Designed</text>
+
+    <text x="28" y="584" font-size="13" font-weight="700">Legend</text>
+    <circle cx="104" cy="580" r="7" fill="#16a34a"/><text x="119" y="585" font-size="12">Documented</text>
+    <path d="M239 580 A7 7 0 0 1 253 580 L239 580 Z" fill="#f59e0b"/><circle cx="246" cy="580" r="7" fill="none" stroke="#d97706"/><text x="261" y="585" font-size="12">Partial / plan-limited</text>
+    <circle cx="424" cy="580" r="7" fill="#9ca3af"/><path d="M420 580H428" stroke="#fff" stroke-width="2"/><text x="439" y="585" font-size="12">Not found in docs read</text>
+    <circle cx="638" cy="580" r="7" fill="#ffffff" stroke="#64748b" stroke-width="2"/><text x="653" y="585" font-size="12">Not researched</text>
+    <circle cx="806" cy="580" r="7" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="2 2"/><text x="821" y="585" font-size="12">Designed only</text>
+
+    <text x="28" y="630" font-size="12" fill="#4b5563"><tspan font-weight="700">Positioning hypothesis:</tspan> These tools cover parts of the flow in different products; RHA proposes joining triage-wait alerts, changelog parity and a readiness gate in one workflow.</text>
+    <text x="28" y="650" font-size="12" fill="#4b5563">This is a hypothesis to validate with users. RHA is a Proposed design (not built), not a replacement for Jira, Linear, or GitHub.</text>
+    <text x="28" y="725" font-size="12" fill="#6b7280">Sources in 03-market/competitor-analysis.md - checked 2026-10-18</text>
+  </g>
+</svg>

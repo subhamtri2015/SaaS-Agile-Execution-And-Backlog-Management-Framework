@@ -16,8 +16,6 @@
   <a href="https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1"><img src="https://img.shields.io/badge/OPEN%20THE%20APP-Release%20Health%20Assistant-167D69?style=for-the-badge" alt="Open Release Health Assistant app"/></a>
 </p>
 
-> **Problem statement:** In this sample, 118 of 152 open issues (77.6%) carried `.Needs Triage` at any age. This may motivate better triage visibility, but the sample does not establish assignment state, wait time, or customer impact. We hypothesize that comparing milestone issues with release notes could help teams identify documentation gaps; that internal process was not observed. Part B specifies a proposed workflow and simulated delivery artifacts.
-
 > **30-second summary:** I audited 200 public issues from a B2B SaaS product and found 77.6% of open issues carrying `.Needs Triage` (any age). I then specified a Release Health Assistant through a PRD, backlog, simulated sprints, and release documentation. Part A is real sample data; Part B is simulated and labeled.
 
 ## 🌟 Executive Overview
@@ -29,32 +27,6 @@ This repository presents an independent product-operations case study based on a
 It executes a two-phase operational transformation:
 1. **Part A (Empirical Audit):** Quantitative SQL analysis of 200 issues, 200 milestones, and 200 releases to diagnose backlog health, triage latency, release cadence, and customer pain themes.
 2. **Part B (Product Response):** A proposed **Release Health Assistant (RHA)**, with simulated sprint and release artifacts. No production software was deployed or tested.
-
----
-
-## Design at a glance
-
-The screens below are a Figma Make prototype using sample data, not evidence of a deployed product. Sample metrics are illustrative only.
-
-### Triage Monitor
-
-![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
-
-Shows the intake snapshot, triage backlog and priority coverage, with an issue table for human review. The 41 breaching figure is sample data, not a measured audit result.
-
-### Changelog Parity
-
-![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
-
-Compares completed milestone work with release-note entries, highlighting matched items and a missing note. The 94% parity value is sample data, not a measured result.
-
-### Release Readiness
-
-![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
-
-Summarizes proposed release gates and required sign-offs, showing a No-Go state when checks fail or approvals are outstanding. Displayed gate states and counts are sample data.
-
-**Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
 
 ---
 
@@ -91,22 +63,37 @@ The audit motivates a proposed **Release Health Assistant**. The 72-hour triage 
 
 ### Competitor & Market Analysis
 
-Jira and Linear already document issue-routing and triage automation. The opportunity explored here is a focused workflow connecting intake review with milestone-to-release-note comparison and a human-reviewed readiness decision; this is a product hypothesis, not a claim that existing tools cannot support it.
+**Proposed design (not built).** The matrix below is limited to the product documentation reviewed on 2026-10-18. “Not found in docs read” and “Not researched” are evidence labels, not claims about a product's full capability set.
 
-| Product | Documented capabilities | RHA opportunity explored |
-|---|---|---|
-| [Jira Automation](https://www.atlassian.com/software/jira/features/automation) | No-code rules, auto-assignment, and integrations such as Slack and GitHub | Connect sample-based triage review with release-note parity and readiness artifacts |
-| [Linear Triage](https://linear.app/docs/triage) | Triage inbox, rules for team/assignee/priority/labels, and triage responsibility | Specify release milestone parity and readiness review alongside intake triage |
+![Competitor capability matrix; RHA is proposed design only](./assets/competitor-matrix.svg)
 
-The sampled data does not establish assignment state, wait duration, customer churn, or internal workflow. See the [market comparison](./03-market/competitor-table.md) and [feature-gap analysis](./03-market/feature-gaps.md) for details and evidence limits.
+| Capability | Jira Automation | Linear Triage | GitHub release notes | RHA proposed |
+|---|---|---|---|---|
+| Triage queue / intake review | Not researched | Documented | Not researched | Designed |
+| Auto-routing or assignment rules | Documented | Partial / plan-limited | Not researched | Designed |
+| Alerts when an issue waits too long untriaged | Partial / plan-limited | Not found in docs read | Not found in docs read | Designed |
+| Release-event automation | Documented | Not researched | Not researched | Designed |
+| Release-notes generation | Not researched | Not researched | Documented | Designed |
+| Closed-issue vs release-notes parity check | Not found in docs read | Not found in docs read | Not found in docs read | Designed |
+| Go/No-Go release gate with sign-offs | Not found in docs read | Not found in docs read | Not found in docs read | Designed |
 
-### Current vs. Future State User Journey
+These tools cover parts of the flow in different products; RHA proposes joining triage-wait alerts, changelog parity and a readiness gate in one workflow. This is a hypothesis to validate with users. RHA does not replace Jira, Linear, or GitHub. See [competitor analysis and sources](./03-market/competitor-analysis.md) and the [feature-gap analysis](./03-market/feature-gaps.md).
 
-**Current state (sample evidence):** An issue enters the public tracker. Of 152 sampled open issues, 118 (77.6%) carried `.Needs Triage` at any age. The dataset does not show whether these issues were assigned, how long they waited, or whether reporters received updates.
+**Sources:** [Linear Triage](https://linear.app/docs/triage), [Linear Triage sources](https://linear.app/enablement/guide/triage-sources), [Jira Automation triggers](https://confluence.atlassian.com/automation0800/jira-automation-triggers-1189780166.html), [GitHub generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes). Checked 2026-10-18.
 
-**Future state (proposed):** A daily scan flags issues past a proposed 72-hour target for human review; before release, a parity check surfaces differences between milestone issues and draft notes; a readiness checklist supports a human Go/No-Go decision. Release communication remains with the authorized team. These are proposed steps, not implemented or measured outcomes.
+### Current vs Future State Journey
 
-See the complete [current/future journey](./03-market/user-journey.md).
+**Hypothesis based on public tracker data.** Dana is a hypothetical customer admin; the journey is not observed customer research. Only the Triage stage cites the audit-sample metric.
+
+| Current-state hypothesis | Future-state proposal |
+|---|---|---|---|---|
+| ![Current-state journey hypothesis](./assets/journey-current-state.svg) | ![Future-state proposed design](./assets/journey-future-state.svg) |
+
+* Current-state details outside the Triage audit-sample figure are hypotheses; issue assignment, wait time, customer communication, and customer outcomes were not verified.
+* The proposed design adds a Triage SLA Monitor, Changelog Parity Validator, and Go/No-Go Readiness Portal with human review; it is not built.
+* A release notes publisher is proposed for maintainers; direct customer notification is Later / proposed only.
+
+See the complete stage-by-stage [current vs future journey](./03-market/user-journey.md).
 
 ---
 
@@ -182,26 +169,45 @@ Key engineering and product-ops trade-offs documented during this project:
 
 ---
 
+## User Stories at a Glance
+
+The PRD includes user stories and Gherkin acceptance criteria for triage monitoring, milestone parity, and release readiness. This visual summary is a **Proposed design (not built)**; see the [full PRD](./04-requirements/PRD-release-health-assistant.md) for complete acceptance criteria.
+
+![Proposed RHA user stories and acceptance criteria](./assets/user-stories.svg)
+
+---
+
 ## 🗺️ Product Roadmap (Now / Next / Later)
 
 ![Product Roadmap](./assets/roadmap.svg)
 
 ---
 
+## Design and PRD at a glance
+
+The screens below are a Figma Make prototype using sample data, not evidence of a deployed product. Sample metrics are illustrative only.
+
+### Triage Monitor
+
+![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
+
+Shows the issue intake snapshot, triage backlog and priority coverage, with an issue table for reviewing items that need attention. The 41 breaching figure is sample data, not a measured audit result.
+
+### Changelog Parity
+
+![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
+
+Compares completed milestone work with release-note entries, highlighting matched items and a missing note. The 94% parity value is sample data, not a measured result.
+
+### Release Readiness
+
+![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
+
+Summarizes release gates and required sign-offs, showing a No-Go state when checks fail or approvals are outstanding. The displayed gate states and counts are sample data.
+
+**Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
+
 **PRD at a glance:** See the six-box content and design handoff in [`09-design/README.md`](./09-design/README.md). The PNG paths above are ready; the files must be added to `09-design/` for the images to render on GitHub.
-
----
-
-## JD skill → proof
-
-| What the role needs | Proof | Link |
-|---|---|---|
-| PRDs, user stories, acceptance criteria | PRD with goals, scope, and Gherkin acceptance criteria | [04-requirements](./04-requirements) |
-| Agile/Scrum, velocity, blockers | Three simulated sprint plans and risk log | [05-sprints-simulated](./05-sprints-simulated) |
-| Backlog quality, feedback themes | Sample-based audit and feedback analysis | [02-audit](./02-audit) |
-| Release notes, test and readiness docs | Simulated release documentation and test plan | [06-docs](./06-docs) |
-| Demos and pilots | Demo script and proposed pilot plan | [07-launch](./07-launch) |
-| PRDs, workflow documentation, Figma | PRD and design handoff; Figma exports pending | [09-design](./09-design) |
 
 ---
 
@@ -231,6 +237,10 @@ release-health-assistant/
 │   ├── audit-dashboard.svg        # Live audit telemetry & metric cards
 │   ├── rha-interface-mockup.svg   # 3-view Release Health Assistant UI
 │   ├── jira-board-burndown.svg    # Sprint board & velocity burndown chart
+│   ├── competitor-matrix.svg      # Source-scoped competitor capability matrix
+│   ├── journey-current-state.svg  # Current-state journey hypothesis
+│   ├── journey-future-state.svg    # Proposed design journey (not built)
+│   ├── user-stories.svg            # Proposed user stories and acceptance checks
 │   └── roadmap.svg                # Visual 3-horizon product roadmap
 ├── data/
 │   ├── processed/                 # Committed aggregate datasets
@@ -245,7 +255,9 @@ release-health-assistant/
 │   └── build_metrics.sql          # Pure SQL reference queries
 ├── 01-context/                    # Scope, methodology, data sources & decisions log
 ├── 02-audit/                      # Real audit findings (Backlog, Triage, Cadence, Themes)
-├── 03-market/                     # Competitor table, user journey & feature gaps
+├── 03-market/                     # Competitor analysis, user journey & feature gaps
+│   ├── competitor-analysis.md     # Source-scoped competitor capabilities
+│   └── user-journey.md            # Six-stage current/future journey
 ├── 04-requirements/               # PRD, backlog CSV & Jira ticket standards
 ├── 05-sprints-simulated/          # 3 Sprints, ceremonies, burndown & risk log
 ├── 06-docs/                       # Release notes, feature library, test record, checklist

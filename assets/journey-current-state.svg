@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Current-state customer bug journey hypothesis</title>
+  <desc id="desc">A six-stage hypothesis based on public tracker data. Only the Triage stage cites the audit sample. Other actions, team steps, pain points, and emotions are unverified hypotheses.</desc>
+  <rect x="0" y="0" width="1200" height="780" fill="#ffffff"/>
+  <g font-family="Inter, -apple-system, Segoe UI, Arial, sans-serif" fill="#1f2937">
+    <text x="24" y="38" font-size="23" font-weight="700">Current state: customer bug journey</text>
+    <text x="24" y="64" font-size="13" fill="#6b7280">Hypothesis based on public tracker data</text>
+    <rect x="1010" y="22" width="166" height="34" rx="17" fill="#fff7ed" stroke="#c2410c"/>
+    <text x="1093" y="44" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">Hypothesis</text>
+    <text x="24" y="91" font-size="12" fill="#4b5563">Except for the Triage audit-sample observation below, current-state actions and emotions are hypotheses; internal workflow was not observed.</text>
+
+    <rect x="18" y="106" width="1158" height="44" rx="6" fill="#f3f4f6"/>
+    <text x="100" y="133" text-anchor="middle" font-size="12" font-weight="700">Journey lane</text>
+    <g font-size="12" font-weight="700" text-anchor="middle">
+      <path d="M194 106H344L360 128L344 150H194Z" fill="#ffedd5" stroke="#fed7aa"/><text x="270" y="132">1 · Report</text>
+      <path d="M360 106H510L526 128L510 150H360L376 128Z" fill="#ffedd5" stroke="#fed7aa"/><text x="443" y="132">2 · Intake</text>
+      <path d="M526 106H676L692 128L676 150H526L542 128Z" fill="#ffedd5" stroke="#fed7aa"/><text x="609" y="132">3 · Triage</text>
+      <path d="M692 106H842L858 128L842 150H692L708 128Z" fill="#ffedd5" stroke="#fed7aa"/><text x="775" y="132">4 · Fix</text>
+      <path d="M858 106H1008L1024 128L1008 150H858L874 128Z" fill="#ffedd5" stroke="#fed7aa"/><text x="941" y="132">5 · Release</text>
+      <path d="M1024 106H1176V150H1024L1040 128Z" fill="#ffedd5" stroke="#fed7aa"/><text x="1100" y="132">6 · Close loop</text>
+    </g>
+
+    <g fill="#fffaf5" stroke="#e5e7eb">
+      <rect x="18" y="150" width="1158" height="92" rx="4"/><rect x="18" y="242" width="1158" height="98" rx="4"/>
+      <rect x="18" y="340" width="1158" height="104" rx="4"/><rect x="18" y="444" width="1158" height="92" rx="4"/>
+      <rect x="18" y="536" width="1158" height="112" rx="4"/>
+    </g>
+    <g stroke="#e5e7eb">
+      <path d="M194 150V648M360 150V648M526 150V648M692 150V648M858 150V648M1024 150V648"/>
+    </g>
+    <g font-size="12" font-weight="700">
+      <text x="32" y="184"><tspan x="32">Customer</tspan><tspan x="32" dy="16" font-weight="400">action</tspan></text>
+      <text x="32" y="278"><tspan x="32">Team</tspan><tspan x="32" dy="16" font-weight="400">action</tspan></text>
+      <text x="32" y="378"><tspan x="32">Pain /</tspan><tspan x="32" dy="16" font-weight="400">benefit</tspan></text>
+      <text x="32" y="480"><tspan x="32">Emotion</tspan><tspan x="32" dy="16" font-weight="400">illustrative</tspan></text>
+      <text x="32" y="575"><tspan x="32">RHA touchpoint</tspan><tspan x="32" dy="16" font-weight="400">future only</tspan></text>
+    </g>
+
+    <g font-size="11.5">
+      <text x="205" y="174"><tspan x="205">Dana reports a bug</tspan><tspan x="205" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="371" y="174"><tspan x="371">Report enters public</tspan><tspan x="371" dy="15">tracker</tspan><tspan x="371" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="537" y="174"><tspan x="537">Dana waits for issue</tspan><tspan x="537" dy="15">review</tspan><tspan x="537" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="703" y="174"><tspan x="703">Dana waits while work</tspan><tspan x="703" dy="15">is addressed</tspan><tspan x="703" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="869" y="174"><tspan x="869">Dana uses product</tspan><tspan x="869" dy="15">after a release</tspan><tspan x="869" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="1035" y="174"><tspan x="1035">Dana looks for an</tspan><tspan x="1035" dy="15">update</tspan><tspan x="1035" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+
+      <text x="205" y="266"><tspan x="205">Team receives report</tspan><tspan x="205" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="371" y="266"><tspan x="371">Intake route is</tspan><tspan x="371" dy="15">undocumented here</tspan><tspan x="371" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="537" y="266"><tspan x="537">Team reviews and</tspan><tspan x="537" dy="15">classifies issue</tspan><tspan x="537" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="703" y="266"><tspan x="703">Engineer investigates</tspan><tspan x="703" dy="15">reported bug</tspan><tspan x="703" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="869" y="266"><tspan x="869">Team prepares release</tspan><tspan x="869" dy="15">and notes</tspan><tspan x="869" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="1035" y="266"><tspan x="1035">Team closes feedback</tspan><tspan x="1035" dy="15">loop</tspan><tspan x="1035" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+
+      <text x="205" y="364"><tspan x="205">Impact and emotion</tspan><tspan x="205" dy="15">not measured</tspan><tspan x="205" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="371" y="364"><tspan x="371">Routing friction</tspan><tspan x="371" dy="15">not measured</tspan><tspan x="371" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="537" y="364"><tspan x="537">Audit sample: 118 of</tspan><tspan x="537" dy="15">152 open issues (77.6%)</tspan><tspan x="537" dy="15">still carried the label</tspan><tspan x="537" dy="15">.Needs Triage</tspan></text>
+      <text x="703" y="364"><tspan x="703">Fix path and time</tspan><tspan x="703" dy="15">not measured</tspan><tspan x="703" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="869" y="364"><tspan x="869">Release-note gap</tspan><tspan x="869" dy="15">not measured</tspan><tspan x="869" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+      <text x="1035" y="364"><tspan x="1035">Communication outcome</tspan><tspan x="1035" dy="15">not measured</tspan><tspan x="1035" dy="15" fill="#9a3412">Hypothesis</tspan></text>
+    </g>
+
+    <text x="205" y="474" font-size="11" fill="#9a3412">1 low · 5 high</text>
+    <polyline points="270,466 443,478 609,492 775,490 941,482 1100,480" fill="none" stroke="#c2410c" stroke-width="2.5"/>
+    <g fill="#c2410c" stroke="#ffffff" stroke-width="2">
+      <circle cx="270" cy="466" r="8"/><circle cx="443" cy="478" r="8"/><circle cx="609" cy="492" r="8"/><circle cx="775" cy="490" r="8"/><circle cx="941" cy="482" r="8"/><circle cx="1100" cy="480" r="8"/>
+    </g>
+    <g font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">
+      <text x="270" y="470">4</text><text x="443" y="482">3</text><text x="609" y="496">2</text><text x="775" y="494">2</text><text x="941" y="486">3</text><text x="1100" y="484">3</text>
+    </g>
+    <text x="205" y="519" font-size="11" fill="#9a3412">Illustrative curve only; emotions not researched or measured.</text>
+
+    <g font-size="11.5" fill="#6b7280">
+      <text x="205" y="592">No current RHA</text><text x="205" y="608">touchpoint specified</text>
+      <text x="371" y="592">No current RHA</text><text x="371" y="608">touchpoint specified</text>
+      <text x="537" y="592">No current RHA</text><text x="537" y="608">touchpoint specified</text>
+      <text x="703" y="592">No current RHA</text><text x="703" y="608">touchpoint specified</text>
+      <text x="869" y="592">No current RHA</text><text x="869" y="608">touchpoint specified</text>
+      <text x="1035" y="592">No current RHA</text><text x="1035" y="608">touchpoint specified</text>
+    </g>
+
+    <text x="24" y="690" font-size="12" fill="#4b5563">Only the Triage row cites the audit sample; every other current-state step is a Hypothesis based on public tracker data.</text>
+    <text x="24" y="716" font-size="12" fill="#6b7280">Source note: public issue audit sample, checked 2026-10-18. Emotion scores are illustrative (1-5).</text>
+  </g>
+</svg>

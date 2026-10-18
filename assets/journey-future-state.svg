@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Future-state RHA customer bug journey proposal</title>
+  <desc id="desc">A proposed, unbuilt six-stage Release Health Assistant design for triage review, release-note parity, readiness gates, and release notes. Direct customer notification is later and proposed only.</desc>
+  <rect x="0" y="0" width="1200" height="780" fill="#ffffff"/>
+  <g font-family="Inter, -apple-system, Segoe UI, Arial, sans-serif" fill="#1f2937">
+    <text x="24" y="38" font-size="23" font-weight="700">Future state: proposed RHA journey</text>
+    <text x="24" y="64" font-size="13" fill="#6b7280">Proposed design (not built)</text>
+    <rect x="956" y="22" width="220" height="34" rx="17" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="1066" y="44" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">Proposed design</text>
+    <text x="24" y="91" font-size="12" fill="#4b5563">Future-state benefits and emotions are hypotheses; proposed touchpoints do not represent implemented features.</text>
+
+    <rect x="18" y="106" width="1158" height="44" rx="6" fill="#f3f4f6"/>
+    <text x="100" y="133" text-anchor="middle" font-size="12" font-weight="700">Journey lane</text>
+    <g font-size="12" font-weight="700" text-anchor="middle">
+      <path d="M194 106H344L360 128L344 150H194Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="270" y="132">1 · Report</text>
+      <path d="M360 106H510L526 128L510 150H360L376 128Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="443" y="132">2 · Intake</text>
+      <path d="M526 106H676L692 128L676 150H526L542 128Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="609" y="132">3 · Triage</text>
+      <path d="M692 106H842L858 128L842 150H692L708 128Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="775" y="132">4 · Fix</text>
+      <path d="M858 106H1008L1024 128L1008 150H858L874 128Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="941" y="132">5 · Release</text>
+      <path d="M1024 106H1176V150H1024L1040 128Z" fill="#dbeafe" stroke="#bfdbfe"/><text x="1100" y="132">6 · Close loop</text>
+    </g>
+
+    <g fill="#f8fbff" stroke="#dbeafe">
+      <rect x="18" y="150" width="1158" height="92" rx="4"/><rect x="18" y="242" width="1158" height="98" rx="4"/>
+      <rect x="18" y="340" width="1158" height="104" rx="4"/><rect x="18" y="444" width="1158" height="92" rx="4"/>
+      <rect x="18" y="536" width="1158" height="112" rx="4" fill="#eff6ff"/>
+    </g>
+    <g stroke="#dbeafe">
+      <path d="M194 150V648M360 150V648M526 150V648M692 150V648M858 150V648M1024 150V648"/>
+    </g>
+    <g font-size="12" font-weight="700">
+      <text x="32" y="184"><tspan x="32">Customer</tspan><tspan x="32" dy="16" font-weight="400">action</tspan></text>
+      <text x="32" y="278"><tspan x="32">Team</tspan><tspan x="32" dy="16" font-weight="400">action</tspan></text>
+      <text x="32" y="378"><tspan x="32">Pain /</tspan><tspan x="32" dy="16" font-weight="400">benefit</tspan></text>
+      <text x="32" y="480"><tspan x="32">Emotion</tspan><tspan x="32" dy="16" font-weight="400">illustrative</tspan></text>
+      <text x="32" y="575"><tspan x="32">RHA touchpoint</tspan><tspan x="32" dy="16" font-weight="400">proposed only</tspan></text>
+    </g>
+
+    <g font-size="11.5">
+      <text x="205" y="174"><tspan x="205">Dana reports a bug</tspan><tspan x="205" dy="15">(hypothetical)</tspan></text>
+      <text x="371" y="174"><tspan x="371">Dana supplies details</tspan><tspan x="371" dy="15">(hypothetical)</tspan></text>
+      <text x="537" y="174"><tspan x="537">Dana waits for human</tspan><tspan x="537" dy="15">review (hypothesis)</tspan></text>
+      <text x="703" y="174"><tspan x="703">Dana uses product</tspan><tspan x="703" dy="15">while team works</tspan></text>
+      <text x="869" y="174"><tspan x="869">Dana sees release</tspan><tspan x="869" dy="15">published</tspan></text>
+      <text x="1035" y="174"><tspan x="1035">Fix appears in the</tspan><tspan x="1035" dy="15">published release notes</tspan></text>
+
+      <text x="205" y="266"><tspan x="205">Team receives report</tspan><tspan x="205" dy="15">in tracker</tspan></text>
+      <text x="371" y="266"><tspan x="371">Review issue details</tspan><tspan x="371" dy="15">and label</tspan></text>
+      <text x="537" y="266"><tspan x="537">Product Ops reviews</tspan><tspan x="537" dy="15">digest and routes</tspan></text>
+      <text x="703" y="266"><tspan x="703">Engineer investigates</tspan><tspan x="703" dy="15">and implements fix</tspan></text>
+      <text x="869" y="266"><tspan x="869">Release Manager reviews</tspan><tspan x="869" dy="15">gate evidence</tspan></text>
+      <text x="1035" y="266"><tspan x="1035">Authorized team publishes</tspan><tspan x="1035" dy="15">release notes</tspan></text>
+
+      <text x="205" y="364"><tspan x="205">Intake details captured</tspan><tspan x="205" dy="15">for human review</tspan><tspan x="205" dy="15">(proposed benefit)</tspan></text>
+      <text x="371" y="364"><tspan x="371">Targeted review queue</tspan><tspan x="371" dy="15">(proposed benefit)</tspan></text>
+      <text x="537" y="364"><tspan x="537">Aging issue becomes</tspan><tspan x="537" dy="15">visible; response still</tspan><tspan x="537" dy="15">requires a person</tspan></text>
+      <text x="703" y="364"><tspan x="703">Fix progress is outside</tspan><tspan x="703" dy="15">RHA scope</tspan></text>
+      <text x="869" y="364"><tspan x="869">Potential blockers and</tspan><tspan x="869" dy="15">gaps are reviewed before</tspan><tspan x="869" dy="15">human Go / No-Go</tspan></text>
+      <text x="1035" y="364"><tspan x="1035">Published notes close</tspan><tspan x="1035" dy="15">the information loop;</tspan><tspan x="1035" dy="15">direct notice later only</tspan></text>
+    </g>
+
+    <text x="205" y="474" font-size="11" fill="#1d4ed8">1 low · 5 high</text>
+    <polyline points="270,466 443,462 609,466 775,480 941,464 1100,458" fill="none" stroke="#15803d" stroke-width="2.5"/>
+    <g fill="#15803d" stroke="#ffffff" stroke-width="2">
+      <circle cx="270" cy="466" r="8"/><circle cx="443" cy="462" r="8"/><circle cx="609" cy="466" r="8"/><circle cx="775" cy="480" r="8"/><circle cx="941" cy="464" r="8"/><circle cx="1100" cy="458" r="8"/>
+    </g>
+    <g font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">
+      <text x="270" y="470">4</text><text x="443" y="466">4</text><text x="609" y="470">4</text><text x="775" y="484">3</text><text x="941" y="468">4</text><text x="1100" y="462">5</text>
+    </g>
+    <text x="205" y="519" font-size="11" fill="#1d4ed8">Illustrative curve only; emotion scores are not measured.</text>
+
+    <g font-size="11.5">
+      <text x="205" y="574"><tspan x="205">No touchpoint</tspan><tspan x="205" dy="15">specified</tspan></text>
+      <text x="371" y="574"><tspan x="371">Triage SLA Monitor</tspan><tspan x="371" dy="15">scans issue queue</tspan></text>
+      <text x="537" y="574"><tspan x="537">Flags .Needs Triage</tspan><tspan x="537" dy="15">older than proposed</tspan><tspan x="537" dy="15">72h; Slack digest</tspan></text>
+      <text x="703" y="574"><tspan x="703">Human-led fix;</tspan><tspan x="703" dy="15">no RHA feature stated</tspan></text>
+      <text x="869" y="560"><tspan x="869">Changelog Parity:</tspan><tspan x="869" dy="14">closed milestone issues</tspan><tspan x="869" dy="14">vs release notes.</tspan><tspan x="869" dy="14">Readiness Portal:</tspan><tspan x="869" dy="14">zero P1, parity, sign-offs</tspan></text>
+      <text x="1035" y="560"><tspan x="1035">Release notes publisher;</tspan><tspan x="1035" dy="14">fix appears in notes.</tspan><tspan x="1035" dy="14">Direct customer notice:</tspan><tspan x="1035" dy="14">Later / proposed only</tspan></text>
+    </g>
+
+    <text x="24" y="690" font-size="12" font-weight="700" fill="#1d4ed8">RHA status: Proposed design (not built). Direct customer notification is Later / proposed, not an implemented touchpoint.</text>
+    <text x="24" y="716" font-size="12" fill="#6b7280">All future-state actions and benefits are hypotheses for validation; emotion scores are illustrative (1-5).</text>
+  </g>
+</svg>
