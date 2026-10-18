@@ -1,0 +1,8 @@
+data/raw/
+archive/
+*.duckdb
+*.duckdb.wal
+*.sqlite
+__pycache__/
+.DS_Store
+.env

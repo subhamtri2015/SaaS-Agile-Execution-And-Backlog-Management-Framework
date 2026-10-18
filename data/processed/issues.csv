@@ -1,0 +1,201 @@
+number,state,title,created_at,closed_at,comments_count,reactions_count,priority,type,needs_triage,milestone_title,labels_csv
+84713,open,"parseDataUri rejects or mis-splits valid data URIs (no media type, commas in data)",2026-10-17T14:10:10Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/UXWest
+84710,open,"Pivot tables fail with ""Duplicate :lib/uuid"" after serdes import when the first row or column field is named ""metric""",2026-10-17T08:29:20Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;Operation/Serialization
+84708,open,A question saved in a dashboard is moved to the trash when it’s only used as a visualizer layer,2026-10-17T02:54:23Z,,2,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Graphy
+84707,open,Let dashboard authors set custom placeholder/help text on filter widgets,2026-10-17T01:48:54Z,,2,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+84706,open,Editing a dashcard with “Visualize another way” removes its click behavior,2026-10-17T01:41:21Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage
+84696,open,Make Metabot’s access to query results configurable per tenant,2026-10-16T21:00:50Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;.Needs Triage;.Team/Metabot
+84666,open,Add documents to data studio,2026-10-16T16:28:12Z,,1,0,Unassigned,Unassigned,0,,
+84634,open,Moving a question fails silently when the card update request errors,2026-10-16T10:40:42Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/UXWest
+84616,open,"Remote Sync import error tells users to “pass continue_on_error,” but Remote Sync has no way to do that",2026-10-16T04:38:58Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy
+84614,open,Make SCIM-provisioned group membership read-only in Metabase,2026-10-16T02:29:39Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;.Needs Triage;.Team/UXWest
+84605,open,Custom viz formatValue ignores number options without a column,2026-10-15T23:16:37Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Gadget
+84601,open,Be able to bulk update table metadata field settings in data studio,2026-10-15T22:00:19Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Gadget
+84596,open,Allow Cloud Storage add-on on Cloud development instances,2026-10-15T20:43:24Z,,1,0,Unassigned,New Feature,1,,Type:New Feature;.Needs Triage;.Escalation
+84571,open,Show the Model used for every conversation in the AI Auditing section of Monitor,2026-10-15T18:12:12Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;Administration/Usage analytics;.Team/Metabot;Monitor
+84551,closed,Bump dependencies,2026-10-15T16:24:19Z,2026-10-16T11:07:41Z,2,0,Unassigned,Unassigned,0,0.58.37,Dependencies;SECURITY;Release-Blocker/Beta/65
+84548,closed,Admin settings pages jump horizontally when switching between them,2026-10-15T15:59:26Z,2026-10-16T09:59:37Z,1,0,P3,Bug,0,,Type:Bug;Priority:P3;Administration/Settings;.Team/Gadget
+84535,open,Can't visit a link from dashboard table,2026-10-15T13:27:11Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/UXWest
+84521,open,"Card-level filters are drawn on top of the value on Number cards since 64, and get clipped on narrow cards",2026-10-15T12:06:42Z,,1,0,P1,Bug,0,,Type:Bug;Priority:P1;.Design Needed;.Team/UXWest
+84503,open,Goal line icon looks weird in the visualizer,2026-10-15T10:39:37Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage
+84494,open,"BigQuery: `datetimeAdd(…, n, ""month"")` on a TIMESTAMP column returns a UTC DATETIME — grouping by month fails and results shift months",2026-10-15T09:23:11Z,,1,0,P2,Unassigned,0,,Priority:P2;.Team/QueryingPlatform
+84490,open,Re-editing a question saved while its query was still running opens the old version and saving again silently reverts the older change,2026-10-15T08:22:17Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Frontend;.Needs Triage;.Team/UXWest
+84474,open,(SDK) click-through to a GUI question doesn't show question’s name,2026-10-15T00:55:44Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Embedding
+84452,closed,"Pivot table fails with ""Don't know how to create ISeq from: java.lang.Integer"" when an aggregation contains if()/case() with a literal else value",2026-10-14T20:25:29Z,2026-10-15T16:05:02Z,2,0,P1,Bug,1,0.64.0,Type:Bug;Priority:P1;.Needs Triage;.Escalation;Querying/Pivot;.Team/QueryingPlatform;.Run Repro Bot;Release-Blocker/Cloud/64
+84451,open,Report Expiration,2026-10-14T20:17:07Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Gadget
+84431,open,"Alert ""Send now"" gives no feedback when the send succeeds",2026-10-14T18:34:42Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Gadget
+84409,closed,v64: Metric cards on a dashboard render as a one-row table when a dashboard filter is connected,2026-10-14T15:16:21Z,2026-10-14T19:57:13Z,2,0,P1,Bug,1,0.64.0,Type:Bug;Priority:P1;.Frontend;.Needs Triage;.Regression;.Team/UXWest
+84401,open,"Table cards with ""Pivot table"" on and more than 3 result columns render flat on v64",2026-10-14T14:47:33Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Regression;.Team/UXWest
+84399,open,Agent 2 agent protocol support,2026-10-14T14:33:00Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Metabot
+84396,open,"Add ""Every N minutes"" and custom cron options to the cache invalidation schedule",2026-10-14T14:10:17Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;.Needs Triage;.Team/UXWest
+84384,open,Public dashboard: card click targeting another tab of the same dashboard does nothing,2026-10-14T12:17:45Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Embedding
+84380,open,Opening a metric from the Dependency Graph in Data Studio opens the metric's home page in the main app,2026-10-14T11:57:21Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84377,closed,"""Send Now"" option for subscriptions older than v64 don't work anymore",2026-10-14T11:29:39Z,2026-10-15T10:30:55Z,2,0,P2,Bug,1,0.64.0,Type:Bug;Priority:P2;.Frontend;.Backend;.Needs Triage;.Escalation;.Team/Gadget
+84374,open,"v0.64.2.2 fails with ""Downgrade detected"" on instances that ran v0.64.2.1",2026-10-14T10:01:40Z,,2,0,P3,Unassigned,0,,Priority:P3
+84373,open,Show field source and query stage when multiple identically-named fields appear in click-through filter connections,2026-10-14T09:57:00Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+84370,open,Sample database keeps coming back after being deleted,2026-10-14T09:32:43Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy
+84369,open,Tooltips close when the pointer moves onto them,2026-10-14T09:24:00Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84368,open,In v65 some Whitelabelling elements (color branding) gets different colors than in v64,2026-10-14T09:22:52Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/UXWest;Release-Blocker/Cloud/65
+84347,open,Be able to bulk update database field metadata (specifically casting data types),2026-10-13T21:36:11Z,,1,1,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Gadget
+84340,open,Upgrade to v64 Unexpected Application Error,2026-10-13T20:33:23Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage
+84334,closed,"Number card title is hidden on small cards since 64, with no way to keep it visible",2026-10-13T19:08:04Z,2026-10-16T20:15:37Z,3,3,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Escalation;.Team/UXWest;Release-Blocker/Cloud/64
+84325,open,UI Bug - Scheduling Caching on a question - Day picker has its arrow cut off,2026-10-13T18:53:35Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest;.Run Repro Bot
+84324,closed,Proposal: Mark write and email tools as destructive and open-world (SafetyCard review),2026-10-13T18:25:35Z,2026-10-15T05:29:32Z,2,0,P3,Unassigned,0,0.64.0,Priority:P3;.Team/Metabot
+84302,open,Undoing a tab deletion revives cards that were removed from the tab before it was deleted,2026-10-13T15:47:02Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Gadget
+84301,open,"Number card: text values wider than the card are clipped on both sides, with no shrink, wrap or ellipsis (64.1)",2026-10-13T15:38:29Z,,1,1,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84280,open,Show dashboard filter slug along with the label to distinguish between filters sharing a similar name,2026-10-13T13:18:11Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+84278,open,Removing a dashboard filter leaves the click behavior mapping referencing it behind,2026-10-13T12:47:08Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84275,open,Click behavior configuration keeps the dashboard filter's old name after the filter is renamed,2026-10-13T12:33:46Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84221,open,Table editing grid isn't keyboard navigable,2026-10-12T20:04:23Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Frontend;.Needs Triage;Querying/Actions;.Team/Gadget
+84219,open,Table editing: Description cell editor grows its row and renders behind the rows below,2026-10-12T19:50:53Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Frontend;.Needs Triage;Querying/Actions;.Team/Gadget
+84208,open,Deleting database connection on one pod doesn't close the pool on other pods,2026-10-12T19:04:00Z,,3,0,Unassigned,Bug,0,,Type:Bug;.Team/QueryingPlatform;.Run Repro Bot
+84206,open,"After query fails with bad credentials, the pool keeps trying creation every 75s with no backoff or timeout",2026-10-12T18:57:59Z,,1,0,Unassigned,Bug,1,,Type:Bug;.Needs Triage;.Team/QueryingPlatform;.Run Repro Bot
+84189,open,Chart previews for pinned questions in collections: reinstate as an opt-in feature,2026-10-12T16:22:55Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;Organization/Collections;.Needs Triage;.Team/UXWest
+84187,open,Table visualization with pivot: first column always aligned to right,2026-10-12T15:54:36Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84182,open,"Warn when a foreign key target isn't unique, before it duplicates rows",2026-10-12T15:32:20Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;Administration/Table Metadata;.Needs Triage;Querying/Metadata;.Team/Graphy
+84179,open,"Protect tenant data isolation - warn or prevent granting ""Can view"" to a tenant group",2026-10-12T14:23:24Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;Administration/Permissions;.Needs Triage;Administration/Tenants;.Team/UXWest
+84169,open,Dashboard tab URL slugs do not normalize multiple spaces or spaced hyphens,2026-10-12T13:37:17Z,,2,7,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+84166,open,An AI agent that autonomously computes composite scores from source columns and writes the result back into the database as a materialized column.,2026-10-12T13:31:38Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Metabot
+84165,open,Lines disappear when hovering a multi-series line chart on a dashboard (Safari),2026-10-12T13:30:11Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage
+84164,open,Detect deviations from a user's typical Metabase usage pattern and alert or flag the behavior.,2026-10-12T13:30:09Z,,1,0,P3,Unassigned,0,,Priority:P3
+84163,open,Automatic rate limiting to block user sessions or tokens that exceed a configurable query rate threshold,2026-10-12T13:29:06Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/QueryingPlatform
+84162,open,"Support sending Slack alerts as rich messages with clickable links, CSV, or PDF instead of only images.",2026-10-12T13:28:17Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Gadget
+84161,open,"Ability to selectively expose some Metabase endpoints publicly while keeping others behind a VPN, e.g. via a proxy sub-endpoint.",2026-10-12T13:26:41Z,,1,0,P3,Unassigned,0,,Priority:P3
+84160,closed,GRO-1061 test link report,2026-10-12T13:25:26Z,2026-10-14T13:42:06Z,1,0,P3,Unassigned,0,,Priority:P3
+84156,open,Data Studio table picker shows an endless spinner for an empty or failed database/schema,2026-10-12T13:01:29Z,,1,0,P3,Bug,0,,Type:Bug;Priority:P3;.Team/UXWest
+84150,open,Support OIDC logout: RP-initiated (end_session_endpoint) and IdP-initiated (back-channel),2026-10-12T11:49:25Z,,1,1,P2,New Feature,1,,Priority:P2;Type:New Feature;.Needs Triage;.Team/UXWest
+84143,open,Markdown handling in snippet description is broken,2026-10-12T09:52:58Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/UXWest
+84138,open,Cancelling a Cloud migration stops the scheduler and never restarts it,2026-10-12T08:59:55Z,,1,0,P1,Unassigned,0,,Priority:P1;.Team/UXWest
+84132,open,"Legacy Druid connection check omits saved Basic-auth token, blocking scheduled sync (v0.61.3)",2026-10-12T08:06:20Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/QueryingPlatform
+84105,closed,Trend cards with multiple trends only show one trend on dashboards no matter how tall the card is,2026-10-10T00:06:56Z,2026-10-16T17:07:18Z,3,0,P1,Bug,0,0.64.0,Type:Bug;Priority:P1;.Frontend;.Escalation;.Team/UXWest
+84064,closed,Fix schema validation for OpenRouter key,2026-10-09T16:13:44Z,2026-10-09T16:14:33Z,1,0,Unassigned,Unassigned,0,,.Team/Gadget
+84063,closed,Update FE Skills,2026-10-09T16:13:07Z,2026-10-09T16:14:24Z,1,0,Unassigned,Unassigned,0,,.Team/Gadget
+84039,open,New functionality to disable rights inheritance between collections/reports,2026-10-09T13:32:53Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+84028,closed,Update from 0.63.19 to 0.64.1 fails on Migration 20260722_rename_query_execution_pkey.yaml,2026-10-09T10:28:27Z,2026-10-12T09:50:03Z,5,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/QueryingPlatform
+84026,open,Add option to enable line of perfect correlation in Scatter Plot,2026-10-09T09:46:34Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+84019,open,Chunk loading error,2026-10-09T08:37:36Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage
+84015,open,Support the Zhipu China mainland endpoint (open.bigmodel.cn) for the Z.AI Metabot provider,2026-10-09T04:48:03Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Metabot
+84005,open,"Metabot references ""Metabase"" and docs even if whitelabeled or `show-metabase-links` is disabled",2026-10-08T22:07:19Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Metabot
+83998,open,"'Apply' button is hidden in search content type filter, making it unusable",2026-10-08T20:37:47Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/UXWest
+83985,open,Advanced mode: define a dashboard filter’s values and linking with SQL,2026-10-08T19:19:36Z,,1,2,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/QueryingPlatform
+83982,open,SQL transform editor: Cmd+Return only runs the query while the cursor is in the SQL text,2026-10-08T19:02:06Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Gadget
+83981,open,SQL editor autocomplete shows nothing when other text follows the cursor on the same line,2026-10-08T18:53:01Z,,2,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage
+83980,closed,Docs: table variable name is missing in the incremental SQL transform instructions,2026-10-08T18:48:30Z,2026-10-12T14:28:33Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;.Needs Triage
+83979,open,"Query builder transform: preview cannot be rerun, and the ""⌘ + return"" hint does nothing",2026-10-08T18:44:39Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Gadget
+83978,closed,"Incremental transforms: ""Learn more"" link opens the docs at the top of the page instead of the incremental section",2026-10-08T18:40:24Z,2026-10-13T12:55:26Z,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/UXWest
+83975,open,Run sample content from a Git repo,2026-10-08T18:14:21Z,,1,0,Unassigned,Unassigned,0,,
+83969,open,Restrict collection permissions to only official collections,2026-10-08T16:48:57Z,,1,0,Unassigned,Unassigned,0,,
+83958,open,Dashboard filter values query multiplies rows when a constraint (e.g. a locked embed parameter) is mapped to several tables,2026-10-08T15:13:20Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/QueryingPlatform
+83956,closed,Theme preview enables modular embedding without showing usage terms,2026-10-08T14:48:00Z,2026-10-15T13:54:05Z,1,0,P2,Bug,0,,Type:Bug;Priority:P2;.Frontend;.Team/Embedding;Embedding/EmbedJS
+83953,open,current dashboard is not disabled in the list of entities on dashcard replacement,2026-10-08T14:28:51Z,,1,0,P3,Bug,0,,Type:Bug;Priority:P3;.Frontend;.Team/UXWest
+83951,open,Unsubscribe/Manage your subscriptions links should not be included in emails from an unsaved alert,2026-10-08T13:48:52Z,,1,0,P3,Bug,0,,Type:Bug;Priority:P3;.Team/Gadget
+83948,closed,user_joined_notification email has mailto pointing to admin where the new user's email should be,2026-10-08T13:15:07Z,2026-10-14T12:00:23Z,1,0,P3,Bug,0,,Type:Bug;Priority:P3;Misc/Emails
+83939,closed,"v64: sync OOMs in ""score-interestingness"" step on large dbs",2026-10-08T12:03:34Z,2026-10-12T13:35:45Z,2,0,P1,Bug,1,0.64.0,Type:Bug;Priority:P1;.Needs Triage;.Escalation;.Team/Graphy
+83937,closed,Wide tables with many pre-64 metrics take minutes and crash the instance (Java heap space) after upgrading to 64,2026-10-08T10:27:54Z,2026-10-08T16:50:03Z,2,0,P1,Bug,1,0.64.0,Type:Bug;Priority:P1;.Needs Triage;.Escalation
+83913,open,Schema/Database permissions show as granular after sync makes tables inactive when all schemas/tables are Can View,2026-10-07T23:24:56Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/UXWest;.Run Repro Bot
+83912,open,Permissions changes made by sync detecting new tables/schemas are not logged in permissions_revisions,2026-10-07T23:04:17Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/UXWest;.Run Repro Bot
+83885,open,"Native pivot tables (MB_USE_NATIVE_PIVOT_TABLES): pivots over 10,000 rows stop rendering, and a limit blanks the grand total",2026-10-07T19:39:56Z,,5,1,P2,Bug,0,,Type:Bug;Priority:P2;.Team/QueryingPlatform
+83884,closed,Fix top spacing in the cache invalidation policy box,2026-10-07T19:17:39Z,2026-10-08T20:15:23Z,2,0,P3,Bug,0,0.63.20,Type:Bug;Priority:P3;Difficulty:Easy;Frequency:Often;.Team/UXWest
+83883,open,MongoDB: optional explicit schema collection to skip document sampling,2026-10-07T19:10:34Z,,2,0,P2,Unassigned,0,,Priority:P2;.Team/Graphy
+83877,closed,Non-default scopes are unchecked by default in MCP OAuth consent screen,2026-10-07T18:00:55Z,2026-10-09T17:11:10Z,2,0,P2,Bug,1,0.64.0,Type:Bug;Priority:P2;.Needs Triage;.Escalation;.Team/Graphy
+83858,open,custom visualizations - support per-column click behavior when custom viz is used in a dashboard,2026-10-07T14:23:00Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Gadget;Visualization/Custom
+83857,open,Custom visualizations: let plugins reuse Table's conditional formatting,2026-10-07T14:09:02Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;Visualization/Conditional Formatting;.Team/Gadget;Visualization/Custom
+83844,open,"`TruncateAuditTables` throws ""syntax error at end of input"" when `query_execution` has no partitions",2026-10-07T09:46:11Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;Administration/Usage analytics;.Team/QueryingPlatform
+83842,open,"`query_execution` partition lookup isn't schema-scoped, so instances sharing a Postgres database schemas stop creating partitions",2026-10-07T09:40:32Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;Administration/Usage analytics;.Team/QueryingPlatform
+83841,closed,CopyButton is not accessible: renders as a clickable div instead of a button,2026-10-07T09:40:11Z,2026-10-08T10:56:24Z,2,0,P3,Bug,0,0.65,Type:Bug;Priority:P3;Misc/Accessibility;.Team/Gadget
+83840,open,"No `query_execution` partitions are created when schedule disabled , so not working after 2 months",2026-10-07T09:34:24Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;Administration/Usage analytics;.Team/QueryingPlatform
+83823,open,Public export links generated by question sharing omit selected parameter values,2026-10-07T02:08:15Z,,1,0,P2,Unassigned,0,,Priority:P2;.Team/UXWest
+83820,open,Invalid query created with dashboard filter if custom column selected and some fields in base table unselected ([SQLITE_ERROR] SQL error or missing database (no such column: __mb_source.Column Name),2026-10-06T22:50:17Z,,2,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/QueryingPlatform;.Run Repro Bot
+83808,closed,Importing a collection breaks active custom visualizations (serialization),2026-10-06T21:20:06Z,2026-10-15T11:54:55Z,2,0,P1,Bug,0,0.63.21,Type:Bug;Priority:P1;.Backend;.Escalation;.Team/Gadget;Operation/Remote-Sync;Visualization/Custom
+83790,closed,"Postgres: JSON unfolding hits ""permission denied"" on columns the connection user can't SELECT, and the whole table's field sync is skipped",2026-10-06T19:49:33Z,2026-10-12T20:14:00Z,6,1,P3,Unassigned,0,0.63.20,Priority:P3;.Team/Graphy
+83763,open,Metabot should know how to use Metabase with docs context,2026-10-06T16:12:10Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Metabot
+83740,open,Integration with OKF,2026-10-06T11:38:31Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83734,open,SQL questions having required variables without a default drop their column metadata on save,2026-10-06T10:04:51Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/QueryingPlatform
+83729,open,Card-level and paginated PDF export,2026-10-06T08:17:03Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+83713,open,Env var with alphanumeric segment gets mistranslated and shows as unset or reads wrong value,2026-10-05T23:52:08Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/Graphy;.Run Repro Bot
+83703,open,Unable to sync mysql database 26.7.0,2026-10-05T22:23:46Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Graphy
+83701,open,Per-group BigQuery query cost limit (maximum bytes billed),2026-10-05T22:09:37Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/QueryingPlatform
+83690,open,Email scanning services with URL scanning unsubscribe users from Metabase email subscriptions/alerts/notifications,2026-10-05T21:02:33Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Backend;.Needs Triage;.Team/Gadget;.Run Repro Bot
+83678,closed,Initiate Migration button in Metabase Store does nothing,2026-10-05T19:24:25Z,2026-10-06T14:18:46Z,2,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Escalation
+83675,open,Support different transform job schedules across remote-sync'ed instances,2026-10-05T18:34:53Z,,1,0,P2,New Feature,1,,Priority:P2;Type:New Feature;.Needs Triage;.Team/Graphy
+83656,open,Make PDF dashboard exports when sending an email attachment pixel perfect,2026-10-05T16:03:15Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/UXWest
+83646,open,Tabs in Alerts management look different from the rest of tabs in the Monitor,2026-10-05T13:08:06Z,,1,0,P3,Bug,0,,Type:Bug;Priority:P3;.Frontend;Design System;.Team/Gadget
+83643,open,Redundant scrollbar shows when scrolling a container that contains tooltips,2026-10-05T09:22:29Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Frontend;.Needs Triage;.Team/Gadget
+83625,open,Podman documentation is out of date,2026-10-03T19:24:19Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83595,closed,Let embedded questions rerun on demand when automatic reruns are off,2026-10-02T20:08:21Z,2026-10-06T14:54:36Z,10,1,P1,Bug,1,0.63.20,Type:Bug;Priority:P1;.Needs Triage;.Team/Embedding
+83544,closed,Dashboard question picker overflows horizontally,2026-10-02T14:08:53Z,2026-10-08T21:37:46Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83540,open,App crashes when opening visualizer for a dashcard that can't be rendered,2026-10-02T14:01:22Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest;.Run Repro Bot
+83539,closed,Content of homepage cards is misaligned on small screens,2026-10-02T13:49:58Z,2026-10-09T15:40:27Z,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83538,closed,Summarize and Group by menus jump from above to below the trigger while searching,2026-10-02T13:44:03Z,2026-10-02T14:30:34Z,2,0,P3,Bug,0,,Type:Bug;Priority:P3;.Frontend;Querying/Notebook;.Team/Gadget
+83525,open,"Show when Remote Sync last pulled, from which commit, and how it was triggered",2026-10-02T10:36:17Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;Operation/Remote-Sync;.Team/Graphy
+83524,open,"Remote Sync: Read-only ""Pull changes now"" says the pull succeeded before it has finished",2026-10-02T10:23:30Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;Operation/Remote-Sync;.Team/Graphy
+83523,open,Remote Sync: saving any setting on a Read-only instance reloads all content from git,2026-10-02T10:21:35Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;Operation/Remote-Sync;.Team/Graphy
+83521,open,"Remote Sync: ""Pull complete"" dialog shows inconsistent info, may report all items as changed",2026-10-02T10:16:51Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;Operation/Remote-Sync;.Team/Graphy
+83517,open,is-empty filter on a column whose type changed from text to integer fails: stale base-type in saved field ref yields `= `,2026-10-02T09:24:29Z,,1,0,P3,Unassigned,0,,Priority:P3
+83510,open,Bar/pie charts silently drop rows whose values exceed 2^53 (returned as strings by js-int-to-string),2026-10-02T08:01:38Z,,1,0,P2,Bug,0,,Type:Bug;Priority:P2;.Team/Graphy
+83508,open,Timeseries x-axis labels shown in UTC while tooltip and query response use the report timezone (Europe/Amsterdam),2026-10-02T07:06:06Z,,2,1,P2,Bug,1,,Type:Bug;Priority:P2;.Frontend;.Needs Triage;.Team/UXWest;.Run Repro Bot
+83484,open,Can't select single-select dropdown filter values via keyboard,2026-10-01T23:02:22Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Frontend;.Needs Triage;.Team/Gadget
+83446,open,Support for Outbound SSH/encrypted connection from data sources/data warehouses infrastructure to Metabase,2026-10-01T19:04:43Z,,2,2,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83442,open,Range inputs in chart settings only update the chart on blur,2026-10-01T18:32:32Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/Gadget
+83439,open,Gauge loses all its ranges when one Min or Max is empty,2026-10-01T18:23:43Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/Gadget
+83434,open,"SDK and modular embedding show ""status: 402"" instead of the backend's ""embedding disabled"" message when `jwtProviderUri` is set",2026-10-01T16:55:08Z,,1,0,P3,Bug,0,,Type:Bug;Priority:P3;.Team/Embedding;Embedding/SDK;Embedding/EmbedJS
+83419,open,Support LLMs hosted on Scaleway for Metabot AI,2026-10-01T14:35:27Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Metabot
+83416,open,Summarized column gets autorenamed and causes empty cells in table view,2026-10-01T13:30:36Z,,3,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/QueryingPlatform
+83415,closed,Series colors change after adding a chart to the Visualizer,2026-10-01T13:00:08Z,2026-10-01T21:59:29Z,2,0,P3,Bug,0,0.65,Type:Bug;Priority:P3;.Team/UXWest
+83410,open,No left horizontal spacing on questions list in the visualizer,2026-10-01T11:43:50Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83405,closed,Schedule: controls are vertically misaligned in the horizontal layout,2026-10-01T11:02:29Z,2026-10-01T13:52:57Z,2,1,Unassigned,Unassigned,0,0.65,Transforms
+83403,open,Verified cards are not marked as such in the visualizer,2026-10-01T10:51:41Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83402,open,All questions have the same table icon in the visualizer,2026-10-01T10:48:46Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83401,open,Links in dashcard legends are not HTML anchors,2026-10-01T10:44:42Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83400,closed,Verification icon cannot be seen when question item is hovered in dashboard's question picker,2026-10-01T10:27:57Z,2026-10-09T19:30:23Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83399,open,Collection page shows no loading state while items are being fetched,2026-10-01T10:19:58Z,,1,1,P3,Bug,1,,Type:Bug;Priority:P3;.Frontend;.Needs Triage;.Team/Gadget
+83382,open,Remote Sync delete of content used as filter for dashboard not cleaned up in Dashboard when deleted (dashboard save failed),2026-09-30T21:40:05Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy;.Run Repro Bot
+83368,closed,Dashboard modals can't be closed with Esc or by clicking outside,2026-09-30T19:37:04Z,2026-10-14T17:02:40Z,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;Misc/Accessibility;.Team/UXWest
+83362,open,Disallow actions on top of derived tables,2026-09-30T18:37:27Z,,1,0,Unassigned,Unassigned,0,,
+83358,closed,Add versioning for data app skills,2026-09-30T18:16:33Z,2026-10-09T15:49:48Z,2,0,Unassigned,Unassigned,0,0.65,
+83344,closed,"""About"" tab is not highlighted as selected after opening a metric",2026-09-30T14:43:50Z,2026-10-14T17:01:54Z,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83341,open,"Impersonated native queries fail with ""Python execution timed out after 30000ms"" for large SQL (GraalPy interpreter-only is 40x+ slower than CPython)",2026-09-30T14:13:33Z,,2,0,P1,Unassigned,0,,Priority:P1;.Team/Graphy
+83340,closed,Bookmarked metric icon does not match the rest of app,2026-09-30T14:08:45Z,2026-10-06T14:19:29Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83338,closed,Cannot tab through the new collection dialog from sidebar,2026-09-30T13:47:00Z,2026-10-02T17:59:14Z,2,0,P3,Bug,0,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;Misc/Accessibility;.Team/UXWest
+83327,open,Query stage preview is always vertically scrollable,2026-09-30T11:18:44Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy
+83323,open,"Native editor: BigQuery uses StandardSQL CodeMirror dialect, backtick identifiers mis-highlight",2026-09-30T10:17:13Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/QueryingPlatform
+83322,closed,Misaligned comments button in Document,2026-09-30T09:46:54Z,2026-10-02T11:00:24Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Needs Triage;.Team/Gadget
+83321,open,LLM provider connection - Allow to define custom HTTP headers in advanced settings,2026-09-30T09:32:36Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Metabot
+83320,closed,Cannot create new paragraph in a Document,2026-09-30T09:27:42Z,2026-09-30T12:15:15Z,3,0,Unassigned,Unassigned,1,,.Needs Triage;.Team/UXWest
+83319,open,Allow tenant users start questions from saved questions in the query builder,2026-09-30T09:20:18Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Embedding;Administration/Tenants
+83318,open,"""Other users' personal collections"" shows sorted users in rows instead of columns",2026-09-30T09:19:27Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83316,closed,"""Other users' personal collections"" does not show up after inviting a user",2026-09-30T09:15:09Z,2026-10-02T20:44:22Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83315,closed,"""Other users' personal collections"" is always horizontally scrollable",2026-09-30T09:12:15Z,2026-10-02T02:43:15Z,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83314,open,When viewer's language matches instance language built-in UI translations are included twice,2026-09-30T09:09:02Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/DevEx
+83313,closed,"""Remove dimension"" button size mismatches ""Available dimensions"" button size",2026-09-30T09:03:26Z,2026-10-02T14:15:19Z,2,0,P3,Bug,1,0.65,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83312,open,Built-in UI translation files under /app/locales are no longer compressed in v62+,2026-09-30T08:43:02Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/DevEx
+83310,open,Make the built-in UI translation files cacheable,2026-09-30T08:29:36Z,,2,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83309,closed,Measure description markdown formatting mismatch,2026-09-30T08:23:19Z,2026-10-08T17:09:20Z,2,0,P2,Bug,1,0.65,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83307,open,HEAD requests for hashed static assets get no-cache headers,2026-09-30T07:29:56Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/DevEx
+83296,open,Configuration option to disable 2FA fallback to email/recovery codes and only allow admin reset,2026-09-29T22:03:00Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83294,closed,Metabot stops with a blank response after `construct_notebook_query` rejects a reference to a grouped join's column (`:lib/uuid` missing required key,2026-09-29T21:24:28Z,2026-10-16T19:37:20Z,3,1,P1,Bug,1,0.64.0,Type:Bug;Priority:P1;.Needs Triage;.Team/Metabot;.Run Repro Bot
+83275,open,Data Studio find & replace breaks SQL Question by leaving references to old table name as-is,2026-09-29T18:35:37Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/Graphy
+83274,open,Data Studio find & replace breaks SQL Question by re-arranging square brackets around optional parameters,2026-09-29T18:35:05Z,,1,0,P1,Bug,1,,Type:Bug;Priority:P1;.Needs Triage;.Team/Graphy
+83273,open,Data Studio find & replace reformats the entire native SQL query and doesn't pretty format it/autoformat it when done,2026-09-29T18:34:23Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy
+83265,open,"Starburst/Trino: uuid columns sync as :type/* and can only be filtered by ""Is empty / Not empty""",2026-09-29T17:27:00Z,,1,0,P2,Unassigned,0,,Priority:P2;.Team/QueryingPlatform
+83252,open,"""- Duplicate"" suffix briefly shown in a question's name input during duplication",2026-09-29T14:30:51Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83251,open,Restrict API keys to an allowed source IP or CIDR range,2026-09-29T13:49:09Z,,2,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage
+83250,open,MCP v2: `question_write` can't create `treemap` or `boxplot` questions,2026-09-29T13:34:17Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Graphy
+83247,open,Actions belong in the Git repo,2026-09-29T12:48:00Z,,1,0,Unassigned,Unassigned,0,,
+83245,open,Query builder controls break a11y,2026-09-29T11:02:03Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Graphy
+83212,open,Custom expression popover is always vertically scrollable,2026-09-29T09:11:46Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;.Needs Triage;.Team/Graphy
+83210,closed,MCP v2: offer the whole scope surface on first consent now that optional scopes are opt-in,2026-09-29T08:53:03Z,2026-10-13T20:49:43Z,5,0,P2,Bug,0,0.64.0,Type:Bug;Priority:P2;.Escalation;.Team/Graphy
+83209,open,Column picker items have no horizontal padding on the right,2026-09-29T08:47:12Z,,1,0,P3,Bug,1,,Type:Bug;Priority:P3;Difficulty:Easy;.Frontend;.Needs Triage;.Regression;.Team/Graphy
+83204,closed,OAuth step-up: keep the scopes a connection already holds ticked on the consent page,2026-09-29T08:03:15Z,2026-10-12T16:10:05Z,2,0,P2,Unassigned,0,,Priority:P2;.Team/Graphy
+83203,open,MCP: return the compiled SQL of an MBQL query,2026-09-29T08:03:13Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Graphy
+83202,open,docs: `docs/ai/mcp.md` still lists the v1 MCP tools,2026-09-29T07:46:21Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Graphy
+83201,open,"MCP: let `visualize_query` render a requested chart type (sankey, funnel, pie…) or a saved question's own visualization",2026-09-29T07:46:19Z,,1,0,P3,Unassigned,0,,Priority:P3;.Team/Graphy
+83153,open,.git in .dockerignore - Build an EE Metabase Uberjar in a containerized environment fails with fatal: not a git repository (or any of the parent directories): .git,2026-09-28T21:25:39Z,,2,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Graphy;.Run Repro Bot
+83152,open,Update Dockerfile to node:22-bookworm - Build a Metabase Uberjar in a containerized environment fails with 404 not found for debian libasound2-data,2026-09-28T21:21:37Z,,1,1,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Graphy;.Run Repro Bot
+83138,open,Add support of watsonx.ai,2026-09-28T19:16:40Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Metabot
+83121,open,Include 2FA in Starter Cloud Subscriptions,2026-09-28T15:55:25Z,,1,0,P3,New Feature,1,,Priority:P3;Type:New Feature;.Needs Triage;.Team/Graphy
+83113,closed,"Metabot question links silently drop date filters (during / between absolute-datetime), showing wrong totals",2026-09-28T14:35:47Z,2026-10-16T12:42:55Z,1,0,P2,Unassigned,0,,Priority:P2;.Team/Metabot
+83093,closed,Snowflake driver HTTP pool leak - blocks all queries until restart,2026-09-28T12:50:32Z,2026-09-29T18:27:57Z,2,0,P1,Bug,0,0.58.36,Type:Bug;Priority:P1
+83091,closed,Wrong default viz is set when saving a question without visualizing it,2026-09-28T10:31:36Z,2026-10-08T11:34:37Z,2,0,P2,Bug,1,0.65,Type:Bug;Priority:P2;Difficulty:Easy;.Frontend;.Needs Triage;.Team/UXWest
+83090,open,Copy-pasting ad-hoc question URLs does not work,2026-09-28T10:03:50Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/Metabot
+83089,open,App appears broken on slow network due to bundle splitting,2026-09-28T09:57:38Z,,1,0,P2,Bug,1,,Type:Bug;Priority:P2;.Needs Triage;.Team/DevEx

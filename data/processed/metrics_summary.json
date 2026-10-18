@@ -1,0 +1,90 @@
+{
+  "dataset_sample_size": 200,
+  "open_issues": 152,
+  "closed_issues": 48,
+  "pct_open_prioritized": 94.7,
+  "pct_open_needs_triage": 77.6,
+  "priority_distribution": [
+    {
+      "priority": "P3",
+      "count": 93,
+      "pct": 61.2
+    },
+    {
+      "priority": "P2",
+      "count": 41,
+      "pct": 27.0
+    },
+    {
+      "priority": "P1",
+      "count": 10,
+      "pct": 6.6
+    },
+    {
+      "priority": "Unassigned",
+      "count": 8,
+      "pct": 5.3
+    }
+  ],
+  "type_distribution": [
+    {
+      "type": "Bug",
+      "count": 126,
+      "pct": 63.0
+    },
+    {
+      "type": "New Feature",
+      "count": 38,
+      "pct": 19.0
+    },
+    {
+      "type": "Unassigned",
+      "count": 36,
+      "pct": 18.0
+    }
+  ],
+  "recent_milestone_completion_avg_pct": 100.0,
+  "average_release_cadence_days": 2.7,
+  "top_engaged_issues": [
+    {
+      "number": 84169,
+      "title": "Dashboard tab URL slugs do not normalize multiple spaces or spaced hyphens",
+      "comments": 2,
+      "reactions": 7,
+      "priority": "P3",
+      "type": "Bug"
+    },
+    {
+      "number": 83595,
+      "title": "Let embedded questions rerun on demand when automatic reruns are off",
+      "comments": 10,
+      "reactions": 1,
+      "priority": "P1",
+      "type": "Bug"
+    },
+    {
+      "number": 84334,
+      "title": "Number card title is hidden on small cards since 64, with no way to keep it visible",
+      "comments": 3,
+      "reactions": 3,
+      "priority": "P1",
+      "type": "Bug"
+    },
+    {
+      "number": 83790,
+      "title": "Postgres: JSON unfolding hits \"permission denied\" on columns the connection user can't SELECT, and the whole table's field sync is skipped",
+      "comments": 6,
+      "reactions": 1,
+      "priority": "P3",
+      "type": "Unassigned"
+    },
+    {
+      "number": 83885,
+      "title": "Native pivot tables (MB_USE_NATIVE_PIVOT_TABLES): pivots over 10,000 rows stop rendering, and a limit blanks the grand total",
+      "comments": 5,
+      "reactions": 1,
+      "priority": "P2",
+      "type": "Bug"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+issue_key,epic_key,summary,issue_type,priority,story_points,sprint,status,assignee
+RHA-101,RHA-EPIC-01,Scheduled Triage Scanner for untriaged issues >72h,Story,P1,5,Sprint 1,Done,Backend Engineer
+RHA-102,RHA-EPIC-01,Slack webhook alerting engine for team digests,Story,P2,3,Sprint 1,Done,Backend Engineer
+RHA-103,RHA-EPIC-01,Priority suggestion heuristic engine for P1 crashers,Story,P2,5,Sprint 1,Done,ML/Data Engineer
+RHA-104,RHA-EPIC-01,Triage SLA monitoring telemetry & metrics emitter,Story,P3,3,Sprint 1,Done,Product Ops Lead
+RHA-105,RHA-EPIC-01,Spike: GitHub Search API rate limit & caching strategy,Spike,P2,3,Sprint 1,Done,Tech Lead
+RHA-201,RHA-EPIC-02,Milestone closed ticket extractor service,Story,P2,5,Sprint 2,Done,Backend Engineer
+RHA-202,RHA-EPIC-02,Markdown release notes parser & issue cross-referencer,Story,P2,5,Sprint 2,Done,Full-Stack Engineer
+RHA-203,RHA-EPIC-02,Changelog parity diff engine & anomaly alert,Story,P1,3,Sprint 2,Done,Backend Engineer
+RHA-204,RHA-EPIC-02,GitHub PR status check check-run integration,Story,P2,5,Sprint 2,Done,DevOps Engineer
+RHA-205,RHA-EPIC-02,Automated release draft generator from milestone tickets,Story,P3,3,Sprint 2,Done,Full-Stack Engineer
+RHA-301,RHA-EPIC-03,Interactive Go/No-Go readiness checklist UI,Story,P1,8,Sprint 3,Done,Frontend Engineer
+RHA-302,RHA-EPIC-03,Digital sign-off workflow & audit log trail,Story,P2,3,Sprint 3,Done,Full-Stack Engineer
+RHA-303,RHA-EPIC-03,Automated release notes publisher to GitHub & Confluence,Story,P2,5,Sprint 3,Done,DevOps Engineer
+RHA-304,RHA-EPIC-03,Pilot onboarding telemetry & feedback collector,Story,P3,3,Sprint 3,Done,Product Ops Lead
+RHA-305,RHA-EPIC-03,End-to-end integration test suite & load benchmark,Story,P1,3,Sprint 3,Done,QA Lead

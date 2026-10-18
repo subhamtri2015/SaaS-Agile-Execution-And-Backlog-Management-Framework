@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roadBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="colNow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="colNext" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="colLater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#581c87" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="1200" height="320" rx="14" fill="url(#roadBg)"/>
+  <rect x="1" y="1" width="1198" height="318" rx="13" fill="none" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Column 1: NOW (Delivered) -->
+  <g transform="translate(30, 25)">
+    <rect width="360" height="270" rx="10" fill="url(#colNow)" stroke="#22c55e" stroke-width="1.5"/>
+    <rect width="360" height="4" rx="2" fill="#22c55e"/>
+
+    <text x="24" y="32" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="1">
+      NOW · DELIVERED (v1.0.0)
+    </text>
+    <text x="24" y="52" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      Live operational governance &amp; pilot deployment
+    </text>
+
+    <!-- Item list -->
+    <g transform="translate(24, 75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#e2e8f0">
+      <circle cx="4" cy="10" r="3" fill="#22c55e"/>
+      <text x="16" y="14" font-weight="600">Automated Triage SLA Scanner (&gt;72h)</text>
+
+      <circle cx="4" cy="45" r="3" fill="#22c55e"/>
+      <text x="16" y="49" font-weight="600">Sub-team Slack Routing (#team-graphy)</text>
+
+      <circle cx="4" cy="80" r="3" fill="#22c55e"/>
+      <text x="16" y="84" font-weight="600">Milestone-to-Changelog Parity Diff</text>
+
+      <circle cx="4" cy="115" r="3" fill="#22c55e"/>
+      <text x="16" y="119" font-weight="600">Go/No-Go Release Gate with Digital Sign-offs</text>
+
+      <circle cx="4" cy="150" r="3" fill="#22c55e"/>
+      <text x="16" y="154" font-weight="600">One-Click Multi-Target Changelog Publisher</text>
+    </g>
+  </g>
+
+  <!-- Column 2: NEXT (Q1 2027) -->
+  <g transform="translate(420, 25)">
+    <rect width="360" height="270" rx="10" fill="url(#colNext)" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="360" height="4" rx="2" fill="#38bdf8"/>
+
+    <text x="24" y="32" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="1">
+      NEXT · PLANNED (Q1 2027)
+    </text>
+    <text x="24" y="52" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      Predictive routing &amp; escalation expansions
+    </text>
+
+    <!-- Item list -->
+    <g transform="translate(24, 75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#e2e8f0">
+      <circle cx="4" cy="10" r="3" fill="#38bdf8"/>
+      <text x="16" y="14" font-weight="600">Git Blame Auto-Routing via file heuristics</text>
+
+      <circle cx="4" cy="45" r="3" fill="#38bdf8"/>
+      <text x="16" y="49" font-weight="600">PagerDuty Escalation on Stagnant P1 Tickets</text>
+
+      <circle cx="4" cy="80" r="3" fill="#38bdf8"/>
+      <text x="16" y="84" font-weight="600">Multi-Repo &amp; Monorepo Monitored Fleet</text>
+
+      <circle cx="4" cy="115" r="3" fill="#38bdf8"/>
+      <text x="16" y="119" font-weight="600">Predictive LLM Triage Severity Classifier</text>
+
+      <circle cx="4" cy="150" r="3" fill="#38bdf8"/>
+      <text x="16" y="154" font-weight="600">Automated GitHub Pull Request Status Checks</text>
+    </g>
+  </g>
+
+  <!-- Column 3: LATER (H2 2027) -->
+  <g transform="translate(810, 25)">
+    <rect width="360" height="270" rx="10" fill="url(#colLater)" stroke="#a855f7" stroke-width="1.5"/>
+    <rect width="360" height="4" rx="2" fill="#c084fc"/>
+
+    <text x="24" y="32" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="1">
+      LATER · VISION (H2 2027)
+    </text>
+    <text x="24" y="52" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      Enterprise fleet governance &amp; impact modeling
+    </text>
+
+    <!-- Item list -->
+    <g transform="translate(24, 75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#e2e8f0">
+      <circle cx="4" cy="10" r="3" fill="#c084fc"/>
+      <text x="16" y="14" font-weight="600">Cross-Org Fleet Governance (Self-hosted + Cloud)</text>
+
+      <circle cx="4" cy="45" r="3" fill="#c084fc"/>
+      <text x="16" y="49" font-weight="600">Customer Impact &amp; Revenue Risk Scoring</text>
+
+      <circle cx="4" cy="80" r="3" fill="#c084fc"/>
+      <text x="16" y="84" font-weight="600">Automated Release Walkthrough Video Generation</text>
+
+      <circle cx="4" cy="115" r="3" fill="#c084fc"/>
+      <text x="16" y="119" font-weight="600">Real-time Continuous SOC-2 Compliance Audit</text>
+
+      <circle cx="4" cy="150" r="3" fill="#c084fc"/>
+      <text x="16" y="154" font-weight="600">Autonomous Branch Health &amp; Hotfix Predictor</text>
+    </g>
+  </g>
+</svg>
