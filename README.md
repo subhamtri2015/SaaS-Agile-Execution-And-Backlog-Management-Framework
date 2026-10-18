@@ -55,20 +55,20 @@ To eliminate the 77.6% triage backlog debt and prevent release notes desynchroni
 
 ---
 
-## 🚀 Agile Execution: Jira Board & Burndown Velocity
+## 🚀 Simulated Sprint Delivery
 
-The Release Health Assistant was delivered across **3 simulated agile sprints**, achieving **100% predictability** (64 committed story points delivered across 30 engineering days).
+The table below is an illustrative delivery scenario across three simulated sprints. It includes carryover and does not report actual implementation or measured team velocity.
 
 ![Jira Sprint Delivery Board & Burndown](./assets/jira-board-burndown.svg)
 
 ### Velocity Breakdown Across Sprints
 
-| Sprint | Epic / Focus Area | Committed Points | Delivered Points | Predictability | Primary Milestone |
-|---|---|---|---|---|---|
-| **Sprint 1** | Foundations & Triage Governance | 19 | 19 | **100%** | Scheduled triage scanner, SQLite caching, Slack alerting |
-| **Sprint 2** | Release Gate & Changelog Automation | 21 | 21 | **100%** | Markdown notes parser, regex tokenizer, PR status check |
-| **Sprint 3** | Readiness Portal, Pilot & Launch | 24 | 24 | **100%** | Interactive Go/No-Go UI, digital sign-off trail, E2E suite |
-| **Total** | **Full Platform Delivery** | **64** | **64** | **100%** | **Pilot deployed; triage debt dropped from 77.6% to 14.2%** |
+| Sprint | Committed Points | Delivered Points | Carryover | Predictability | Focus |
+|---|---:|---:|---:|---:|---|
+| **Sprint 1** | 19 | 16 | 3 (RHA-103) | 84% | Foundations & triage governance |
+| **Sprint 2** | 24 (21 + 3 carried) | 21 | 3 | 88% | Release gate & changelog automation |
+| **Sprint 3** | 27 (24 + 3 carried) | 27 | 0 | 100% | Readiness portal, pilot & launch |
+| **Total unique scope** | **64** | **64** | **0 remaining** | **Illustrative** | **Target: <15% triage debt (assumption, not measured)** |
 
 *(Explore full sprint ceremonies, standups, and retrospectives in [`05-sprints-simulated/`](./05-sprints-simulated/))*
 

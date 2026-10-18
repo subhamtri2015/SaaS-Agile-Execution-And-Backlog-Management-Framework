@@ -1,10 +1,11 @@
 # Release Notes: Release Health Assistant (RHA) v1.0.0
 
+> **SIMULATED RELEASE.** Illustrative release notes for a portfolio case study; no software was deployed.
+
 * **Release Tag:** `v1.0.0`
 * **Release Date:** 2026-10-18
 * **Release Manager:** Product Operations Lead
-* **Deployment Status:** **General Availability (GA)**
-* **Readiness Sign-Off:** **Approved (100% Pass)**
+* **Deployment Status:** **Simulated GA**
 
 ---
 
@@ -31,18 +32,18 @@ Release Health Assistant (RHA) v1.0.0 provides end-to-end triage automation, rel
 
 ## 🛠️ Closed Issues in this Release
 
-| Ticket Key | Category | Summary | Pull Request |
+| Ticket Key | Category | Summary |
 |---|---|---|---|
-| **RHA-101** | Feature | Daily scheduled scanner for `.Needs Triage` aging > 72 hours | [#12](https://github.com/example/rha/pull/12) |
-| **RHA-102** | Feature | Slack webhook alerting engine with sub-team channel routing | [#14](https://github.com/example/rha/pull/14) |
-| **RHA-103** | Feature | Heuristic keyword classifier for Priority P1 crashers | [#18](https://github.com/example/rha/pull/18) |
-| **RHA-201** | Feature | GitHub Milestone issue extractor service | [#22](https://github.com/example/rha/pull/22) |
-| **RHA-202** | Feature | Markdown release notes parser and regex cross-referencer | [#25](https://github.com/example/rha/pull/25) |
-| **RHA-203** | Fix | Parity diff engine handling transferred tickets and reopens | [#29](https://github.com/example/rha/pull/29) |
-| **RHA-204** | Feature | GitHub PR Status Check API integration | [#31](https://github.com/example/rha/pull/31) |
-| **RHA-301** | Feature | Web-based Go/No-Go readiness checklist dashboard | [#36](https://github.com/example/rha/pull/36) |
-| **RHA-302** | Feature | Multi-party digital sign-off and audit log engine | [#40](https://github.com/example/rha/pull/40) |
-| **RHA-303** | Feature | Automated multi-target release notes publisher | [#44](https://github.com/example/rha/pull/44) |
+| **RHA-101** | Feature | Daily scheduled scanner for `.Needs Triage` aging > 72 hours |
+| **RHA-102** | Feature | Slack webhook alerting engine with sub-team channel routing |
+| **RHA-103** | Feature | Heuristic keyword classifier for Priority P1 crashers |
+| **RHA-201** | Feature | GitHub Milestone issue extractor service |
+| **RHA-202** | Feature | Markdown release notes parser and regex cross-referencer |
+| **RHA-203** | Fix | Parity diff engine handling transferred tickets and reopens |
+| **RHA-204** | Feature | GitHub PR Status Check API integration |
+| **RHA-301** | Feature | Web-based Go/No-Go readiness checklist dashboard |
+| **RHA-302** | Feature | Multi-party digital sign-off and audit log engine |
+| **RHA-303** | Feature | Automated multi-target release notes publisher |
 
 ---
 
