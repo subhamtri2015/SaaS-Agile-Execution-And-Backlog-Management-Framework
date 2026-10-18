@@ -1,19 +1,18 @@
 # Market & Feature Gaps Analysis
 
-Combining the empirical findings from our Metabase GitHub audit with broader competitive intelligence reveals critical operational and product feature gaps.
+This analysis combines a public GitHub issue sample with a limited review of official Jira and Linear workflow documentation. It identifies a product opportunity to test, not a verified universal market gap.
 
 ---
 
 ## 1. Feature Gap Matrix
 
-| Identified Gap | Evidence from Real Data | Competitive Comparison | Urgency & Impact |
+| Opportunity | Evidence and limits | Existing documented capabilities | Product response to explore |
 |---|---|---|---|
-| **1. Automated Triage & SLA Enforcement** | **77.6%** of open issues remain stuck in `.Needs Triage`. Triage is largely asynchronous and manual. | Commercial platforms (Jira Service Management, Linear Triage) automate routing rules and SLA timers out of the box. | **High:** Primary bottleneck slowing down overall backlog velocity. |
-| **2. Milestone-to-Changelog Reconciliation** | Maintainer issue #10139 confirms milestone tagging is the sole mechanism driving release notes, requiring manual cross-checking. | Modern CI/CD platforms (Release Drafter, GitHub Releases auto-generate) integrate PR labels directly into release markdown. | **High:** Risk of customer blindspots during Metabase's rapid 2.7-day release cycles. |
-| **3. Granular Embedded Query Controls** | Issue #83595 (top feedback engagement: 10 comments) requests manual rerun triggers in embedded mode when automatic reruns are paused. | Looker and Power BI provide explicit embedded SDK events to trigger cache invalidation and query reruns. | **Medium:** Direct blocker for B2B SaaS customers using Metabase as an embedded tenant portal. |
-| **4. Visual Layout Truncation Overrides** | Issue #84334 (P1 defect) documents titles on KPI number cards disappearing on compact dashboards. | Superset and Tableau allow dynamic responsive typography scaling and customizable card padding. | **Medium:** Diminishes executive dashboard readability on mobile or embedded widgets. |
+| **1. Aging triage visibility** | 118 of 152 open issues in the sample (77.6%) carried `.Needs Triage` at any age. Age-specific waiting time and assignment state were not measured. | Jira documents configurable automation, including auto-assignment and Slack/GitHub integrations. Linear documents a triage inbox, rules, and triage responsibility. | Specify an aging scan and human-reviewed digest; evaluate usefulness in a pilot before making an outcome claim. |
+| **2. Milestone-to-notes review** | The sample includes milestone and release records, but does not measure omissions or observe maintainers' internal reconciliation process. | Jira offers flexible automation; the reviewed Linear triage documentation focuses on intake and routing. The reviewed sources do not establish whether either product supports this exact workflow natively. | Prototype a comparison between a selected milestone issue set and draft release notes; present gaps for review. |
+| **3. Release readiness coordination** | No production release-gate behavior was measured in the audit. | Existing workflow tools provide automation primitives; detailed release-gate coverage was not evaluated in this limited review. | Specify a readiness checklist and sign-off record as a proposed workflow, not a delivered capability. |
 
 ---
 
 ## 2. Product Strategy Response
-To directly solve Gaps 1 and 2 (the operational gaps within Product Operations' direct sphere of control), we designed the **Release Health Assistant (RHA)** detailed in `04-requirements/`. The RHA automates triage SLA enforcement, verifies release readiness, and guarantees 100% parity between closed milestone issues and published release notes.
+The proposed **Release Health Assistant (RHA)** in [`04-requirements/`](../04-requirements/) explores these connected workflows. It is not implemented: the 72-hour value is a proposed target, parity is not measured, and no release-readiness behavior has been executed. For feature references and sources, see the [competitor comparison](./competitor-table.md).

@@ -1,23 +1,21 @@
-# Market Landscape & Competitor Matrix
+# Competitor & Market Analysis
 
-To frame Metabase's positioning within the horizontal B2B SaaS analytics domain, this matrix evaluates Metabase against its primary open-source and commercial competitors.
+This comparison focuses on documented issue-intake and workflow features relevant to the proposed Release Health Assistant (RHA). It is not a feature-by-feature product evaluation, and “not covered by the source reviewed” does not mean a product lacks that capability.
 
----
+## Competitive Comparison
 
-## 1. Competitive Comparison Matrix
+| Product | Documented triage/workflow strengths | Opportunity relevant to this case study |
+|---|---|---|
+| [Jira Automation](https://www.atlassian.com/software/jira/features/automation) | No-code event-based rules; Atlassian documents auto-assignment and integrations including Slack and GitHub. Rule scope and execution limits vary by plan. | RHA is framed as a focused workflow specification connecting an issue sample, milestone-to-notes comparison, and release-readiness checklist, rather than a replacement for Jira automation. |
+| [Linear Triage](https://linear.app/docs/triage) | Dedicated triage inbox; rules can update team, status, assignee, label, project, and priority; triage responsibility can notify or assign owners. Some advanced triage features are plan-dependent. | RHA explores explicit milestone/release-note parity and release gate artifacts in addition to intake triage. The cited Linear page does not establish whether all comparable release controls are available elsewhere in Linear. |
 
-| Capability / Dimension | **Metabase** (Audited Product) | **Apache Superset** | **Looker** (Google Cloud) | **Tableau** (Salesforce) | **Microsoft Power BI** |
-|---|---|---|---|---|---|
-| **Core Value Proposition** | Self-serve analytics for everyone; fastest setup to query | Open-source enterprise BI with deep SQL lab & charts | Governed semantic modeling (LookML) for unified metrics | Complex visual analytics and deep statistical exploration | Enterprise reporting deeply tied to Microsoft 365 ecosystem |
-| **Target Audience** | Non-technical business users + SMB/Mid-market PMs | Data engineers & technical data analysts | Enterprise centralized BI teams & governance leads | Data scientists & specialized BI analysts | Enterprise corporate analysts & spreadsheet power users |
-| **Deployment Model** | Self-hosted Docker/JAR or Metabase Cloud SaaS | Self-hosted Helm/Docker or Preset.io SaaS | Cloud SaaS (GCP hosted) | Cloud SaaS or On-prem Server | Cloud SaaS (Power BI Service) + Desktop authoring tool |
-| **Triage & Release Openness** | **Public GitHub** (Issues, PRs, Milestones transparent) | Public GitHub (Apache Foundation governance) | Closed proprietary tracker (Google Cloud Support portal) | Closed proprietary tracker (Salesforce Trailblazer) | Closed community forum (Microsoft Fabric Ideas) |
-| **Embedded Analytics** | Lightweight iframe / JWT signed embeds, SDK available | Embedded SDK via Superset-UI packages | Extensive Looker Embed SDK & API-first components | Tableau Embedded Analytics (JavaScript v3 API) | Power BI Embedded Azure capacity model |
-| **Pricing Model** | Open Source (AGPL/Commercial Pro $85/mo + user seats) | 100% Free Open Source (Preset charges per user/seat) | High enterprise barrier ($30k-$50k+ annual commitment) | $75/user/month (Creator) + Viewer tier costs | $10-$20/user/month (Pro/Premium per user) |
-| **Release Velocity** | **Rapid patch cadence (~2.7 days)** | Bi-weekly/Monthly release tags | Monthly GCP maintenance releases | Quarterly major releases + monthly patches | Monthly feature cadence for desktop & service |
+## Product Opportunity
 
----
+The opportunity is not that existing trackers cannot automate routing. Jira and Linear both document routing and workflow automation. This portfolio explores whether a single, reviewable operational workflow can connect aging-issue alerts to release-scope parity and readiness decisions. This is a product hypothesis, not a claim that the gap is universal or that RHA is implemented.
 
-## 2. Key Product Operations Takeaways
-1. **The Agility Advantage:** Metabase releases at a vastly faster clip (~2.7 days) than legacy BI giants like Looker or Tableau. This enables rapid delivery of bug fixes and incremental polish.
-2. **The Governance Vulnerability:** While Looker enforces centralized semantic data modeling (LookML) and heavy release gates, Metabase's speed can sometimes introduce minor UX regressions (e.g., number card title truncation `#84334`), emphasizing the necessity of automated release health checks.
+The public issue sample shows 118 of 152 open issues (77.6%) carried `.Needs Triage` at any age. It does not establish assignment state, time spent waiting, customer churn, or internal team practices. See [feature gaps](./feature-gaps.md) and the [current/future journey](./user-journey.md) for the evidence boundary.
+
+### Sources reviewed
+
+- Atlassian, [Jira automation](https://www.atlassian.com/software/jira/features/automation), accessed 2026-10-18.
+- Linear, [Triage](https://linear.app/docs/triage), accessed 2026-10-18.

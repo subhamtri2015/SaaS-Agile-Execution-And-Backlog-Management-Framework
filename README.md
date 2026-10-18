@@ -16,7 +16,7 @@
   <a href="https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1"><img src="https://img.shields.io/badge/OPEN%20THE%20APP-Release%20Health%20Assistant-167D69?style=for-the-badge" alt="Open Release Health Assistant app"/></a>
 </p>
 
-> **Problem Statement:** In a public SaaS product’s issue tracker, 77.6% of sampled open issues were still awaiting triage, which weakens backlog quality and prioritization hygiene before work reaches sprint planning. Manual reconciliation of closed issues against release notes adds execution risk at release readiness. This case study documents the requirements (PRD, user stories, acceptance criteria), Jira backlog, simulated sprint velocity and blocker tracking, and pilot and release communication for a tool that addresses both customer pain points.
+> **Problem statement:** In this sample, 118 of 152 open issues (77.6%) carried `.Needs Triage` at any age. This may motivate better triage visibility, but the sample does not establish assignment state, wait time, or customer impact. We hypothesize that comparing milestone issues with release notes could help teams identify documentation gaps; that internal process was not observed. Part B specifies a proposed workflow and simulated delivery artifacts.
 
 > **30-second summary:** I audited 200 public issues from a B2B SaaS product and found 77.6% of open issues carrying `.Needs Triage` (any age). I then specified a Release Health Assistant through a PRD, backlog, simulated sprints, and release documentation. Part A is real sample data; Part B is simulated and labeled.
 
@@ -40,16 +40,19 @@ The screens below are a Figma Make prototype using sample data, not evidence of 
 
 ![Triage Monitor screen (sample data)](./09-design/screen-1-triage.png)
 
+Shows the intake snapshot, triage backlog and priority coverage, with an issue table for human review. The 41 breaching figure is sample data, not a measured audit result.
 
 ### Changelog Parity
 
 ![Changelog Parity screen (sample data)](./09-design/screen-2-parity.png)
 
+Compares completed milestone work with release-note entries, highlighting matched items and a missing note. The 94% parity value is sample data, not a measured result.
 
 ### Release Readiness
 
 ![Release Readiness screen (sample data)](./09-design/screen-3-readiness.png)
 
+Summarizes proposed release gates and required sign-offs, showing a No-Go state when checks fail or approvals are outstanding. Displayed gate states and counts are sample data.
 
 **Clickable prototype:** [Open the Release Health Assistant app](https://www.figma.com/make/13NZrWaErDzkE7RG2Kq8Tu/Release-Health-Assistant-App?t=Fj9kotGJ3uU33jWD-1)
 
@@ -85,6 +88,25 @@ The audit motivates a proposed **Release Health Assistant**. The 72-hour triage 
 * **Triage target monitor:** A proposed daily scan for `.Needs Triage` issues older than 72 hours, with a scoped team digest.
 * **Milestone-to-changelog parity check:** A proposed comparison that flags missing or mismatched release notes; no parity result has been measured.
 * **Readiness portal:** A proposed checklist for P1 blockers, test evidence, parity review, and sign-offs; it has not been implemented or deployed.
+
+### Competitor & Market Analysis
+
+Jira and Linear already document issue-routing and triage automation. The opportunity explored here is a focused workflow connecting intake review with milestone-to-release-note comparison and a human-reviewed readiness decision; this is a product hypothesis, not a claim that existing tools cannot support it.
+
+| Product | Documented capabilities | RHA opportunity explored |
+|---|---|---|
+| [Jira Automation](https://www.atlassian.com/software/jira/features/automation) | No-code rules, auto-assignment, and integrations such as Slack and GitHub | Connect sample-based triage review with release-note parity and readiness artifacts |
+| [Linear Triage](https://linear.app/docs/triage) | Triage inbox, rules for team/assignee/priority/labels, and triage responsibility | Specify release milestone parity and readiness review alongside intake triage |
+
+The sampled data does not establish assignment state, wait duration, customer churn, or internal workflow. See the [market comparison](./03-market/competitor-table.md) and [feature-gap analysis](./03-market/feature-gaps.md) for details and evidence limits.
+
+### Current vs. Future State User Journey
+
+**Current state (sample evidence):** An issue enters the public tracker. Of 152 sampled open issues, 118 (77.6%) carried `.Needs Triage` at any age. The dataset does not show whether these issues were assigned, how long they waited, or whether reporters received updates.
+
+**Future state (proposed):** A daily scan flags issues past a proposed 72-hour target for human review; before release, a parity check surfaces differences between milestone issues and draft notes; a readiness checklist supports a human Go/No-Go decision. Release communication remains with the authorized team. These are proposed steps, not implemented or measured outcomes.
+
+See the complete [current/future journey](./03-market/user-journey.md).
 
 ---
 
@@ -128,7 +150,7 @@ Every engineering ticket adheres to strict user-story structure with Gherkin acc
 ```jira
 Key: RHA-101 | Component: Ingest-Worker | Priority: P1 | Points: 5
 Summary: As a Product Ops Lead, I want a daily scan for '.Needs Triage' issues > 72 hours,
-         so that our 77.6% triage backlog debt is systematically cleared.
+         so that issues beyond the proposed 72-hour target are surfaced for human review.
 
 Acceptance Criteria (Gherkin):
   Scenario 1: Daily scan detects SLA breach
