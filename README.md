@@ -76,8 +76,6 @@ The Release Health Assistant was delivered across **3 simulated agile sprints**,
 
 ## 📑 Core Documentation Architecture
 
-![Product Operations Architecture Flow](./assets/architecture-flow.svg)
-
 ### Upstream PRD vs. Downstream Release Documentation
 
 A central principle of this repository is maintaining strict separation between upstream product requirements and downstream release documentation:
@@ -143,7 +141,6 @@ saas-product-ops-audit/
 ├── assets/                        # SVG Visualizations & Architecture Diagrams
 │   ├── hero-banner.svg            # Executive overview header
 │   ├── audit-dashboard.svg        # Live audit telemetry & metric cards
-│   ├── architecture-flow.svg      # End-to-end data & artifact architecture
 │   ├── rha-interface-mockup.svg   # 3-view Release Health Assistant UI
 │   ├── jira-board-burndown.svg    # Sprint board & velocity burndown chart
 │   └── roadmap.svg                # Visual 3-horizon product roadmap

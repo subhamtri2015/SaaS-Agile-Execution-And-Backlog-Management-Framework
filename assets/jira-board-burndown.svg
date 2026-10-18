@@ -28,7 +28,7 @@
     <text x="44" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">
       Jira Sprint Delivery Board &amp; Burndown
     </text>
-    <text x="365" y="21" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">
+    <text x="430" y="21" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">
       [SIMULATED AGILE CYCLE · 64 PTS TOTAL]
     </text>
 
@@ -42,20 +42,20 @@
   <g transform="translate(30, 75)">
     <!-- Column: TO DO -->
     <rect x="0" y="0" width="165" height="395" rx="8" fill="url(#columnBg)" stroke="#334155" stroke-width="1"/>
-    <text x="14" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">TO DO (0)</text>
+    <text x="14" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">TO DO (0)</text>
 
     <!-- Column: IN PROGRESS -->
     <rect x="180" y="0" width="165" height="395" rx="8" fill="url(#columnBg)" stroke="#334155" stroke-width="1"/>
-    <text x="194" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">IN PROGRESS (0)</text>
+    <text x="194" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">IN PROGRESS (0)</text>
 
     <!-- Column: IN REVIEW -->
     <rect x="360" y="0" width="165" height="395" rx="8" fill="url(#columnBg)" stroke="#334155" stroke-width="1"/>
-    <text x="374" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">IN REVIEW (0)</text>
+    <text x="374" y="26" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">IN REVIEW (0)</text>
 
     <!-- Column: DONE (Active with tickets) -->
     <rect x="540" y="0" width="220" height="395" rx="8" fill="url(#columnBg)" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.8"/>
     <rect x="540" y="0" width="220" height="4" rx="2" fill="#22c55e"/>
-    <text x="554" y="26" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">DONE (24 PTS / 100%)</text>
+    <text x="554" y="26" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">DONE (24 PTS / 100%)</text>
 
     <!-- Ticket 1 in DONE -->
     <g transform="translate(550, 42)">
